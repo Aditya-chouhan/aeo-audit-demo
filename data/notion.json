@@ -1,0 +1,1807 @@
+{
+  "url": "https://www.notion.com/",
+  "generatedAt": "2026-07-07T09:40:06.372Z",
+  "crawledPages": 8,
+  "maxPages": 8,
+  "scoring": {
+    "foundationalScore": 38,
+    "heuristicIntelligenceScore": 61,
+    "provisionalScore": 50,
+    "provisionalGrade": "D",
+    "note": "provisionalScore uses a deterministic heuristic for the intelligence half. The agent should replace heuristicIntelligenceScore with its own 6-dimension LLM evaluation, then compute finalScore = round(0.5*foundationalScore + 0.5*llmIntelligenceScore)."
+  },
+  "checks": [
+    {
+      "id": "title",
+      "label": "Clear page title",
+      "points": 10,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "meta-description",
+      "label": "Meta description",
+      "points": 10,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "canonical",
+      "label": "Canonical URL",
+      "points": 8,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "h1",
+      "label": "Single H1 heading",
+      "points": 8,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "schema",
+      "label": "Structured data present",
+      "points": 8,
+      "passed": false,
+      "details": "0/8 pages passed this check."
+    },
+    {
+      "id": "schema-types",
+      "label": "Schema types identified",
+      "points": 8,
+      "passed": false,
+      "details": "0/8 pages passed this check."
+    },
+    {
+      "id": "og",
+      "label": "Open Graph basics",
+      "points": 8,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "internal-links",
+      "label": "Internal linking",
+      "points": 10,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "image-alt",
+      "label": "Image alt coverage",
+      "points": 8,
+      "passed": false,
+      "details": "5/8 pages passed this check."
+    },
+    {
+      "id": "text-depth",
+      "label": "Readable content depth",
+      "points": 12,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "indexability",
+      "label": "Indexable for discovery",
+      "points": 10,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "ai-meta-tags",
+      "label": "AI-accessible meta tags",
+      "points": 6,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "heading-hierarchy",
+      "label": "Content structure",
+      "points": 6,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "llms-txt",
+      "label": "llms.txt valid",
+      "passed": false,
+      "points": 10,
+      "details": "Found llms.txt but missing # heading."
+    },
+    {
+      "id": "ai-bot-access",
+      "label": "AI bot access",
+      "passed": true,
+      "points": 12,
+      "details": "No AI bots blocked in robots.txt."
+    },
+    {
+      "id": "rss-feed",
+      "label": "RSS/Atom feed",
+      "passed": false,
+      "points": 8,
+      "details": "No RSS/Atom feed found."
+    }
+  ],
+  "coverage": [
+    {
+      "pageType": "other",
+      "pages": 3,
+      "avgScore": 59
+    },
+    {
+      "pageType": "product",
+      "pages": 3,
+      "avgScore": 78
+    },
+    {
+      "pageType": "home",
+      "pages": 1,
+      "avgScore": 79
+    },
+    {
+      "pageType": "about",
+      "pages": 1,
+      "avgScore": 86
+    }
+  ],
+  "prioritizedFixes": [
+    {
+      "title": "Add structured data (JSON-LD) on key templates",
+      "impact": "High",
+      "effort": "Medium",
+      "why": "Agents rely on machine-readable entities and page intent signals."
+    },
+    {
+      "title": "Standardize title and meta description quality",
+      "impact": "High",
+      "effort": "Low",
+      "why": "Weak metadata reduces retrieval accuracy and snippet quality."
+    },
+    {
+      "title": "Expand answer-first content on thin pages",
+      "impact": "High",
+      "effort": "Medium",
+      "why": "Agents need enough explicit facts and context to answer safely."
+    },
+    {
+      "title": "Improve internal linking between key pages",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "Better graph connectivity improves crawl and context propagation."
+    },
+    {
+      "title": "Publish a valid llms.txt with heading, links, and policy info",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "It gives AI systems a direct index of trusted URLs and constraints."
+    },
+    {
+      "title": "Add an RSS or Atom feed",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "RSS feeds help AI systems discover and track new content."
+    },
+    {
+      "title": "Improve content structure with clear heading levels",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "Well-structured H1 → H2 → H3 outlines help AI agents chunk, extract, and cite specific sections."
+    },
+    {
+      "title": "Add recognized schema types to JSON-LD",
+      "impact": "Medium",
+      "effort": "Medium",
+      "why": "Named types like Organization, Product, Article help AI classify your content."
+    }
+  ],
+  "worstPages": [
+    {
+      "url": "https://www.notion.com/login",
+      "score": 50,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.notion.com/signup",
+      "score": 50,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.notion.com/product/try-ai-meeting-notes",
+      "score": 78,
+      "maxScore": 112,
+      "pageType": "product"
+    },
+    {
+      "url": "https://www.notion.com/",
+      "score": 88,
+      "maxScore": 112,
+      "pageType": "home"
+    },
+    {
+      "url": "https://www.notion.com/product/ai-meeting-notes",
+      "score": 88,
+      "maxScore": 112,
+      "pageType": "product"
+    }
+  ],
+  "diagnostics": {
+    "crawlMs": 5925,
+    "robotsFound": true,
+    "robotsBlockedCount": 0,
+    "discoveredFromSitemap": 8,
+    "failedPages": 0
+  },
+  "robots": {
+    "found": true,
+    "aiBotBlocked": [],
+    "sitemapCount": 8
+  },
+  "llmsTxt": {
+    "found": true,
+    "hasH1": false,
+    "hasLink": true,
+    "contentLength": 6926,
+    "fullTxtFound": false
+  },
+  "rssFeed": false,
+  "heuristicIntelligenceSignals": [
+    {
+      "id": "freshness",
+      "signal": "Freshness",
+      "score": 44,
+      "rationale": "Date signals, update timestamps, and active maintenance indicators.",
+      "keyFinding": "0% pages have date signals; no RSS feed.",
+      "status": "Weak",
+      "fixPriority": "Critical"
+    },
+    {
+      "id": "answer-readiness",
+      "signal": "Answer Readiness",
+      "score": 46,
+      "rationale": "Does the content lead with direct answers to questions agents get asked?",
+      "keyFinding": "13% pages have Q&A-style headings; 25% lead with definitions.",
+      "status": "Weak",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "evidence-density",
+      "signal": "Evidence Density",
+      "score": 61,
+      "rationale": "Density of statistics, data points, named sources, and in-text citations.",
+      "keyFinding": "75% pages include numeric evidence; 0% have author attribution.",
+      "status": "Moderate",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "quotability",
+      "signal": "Quotability",
+      "score": 63,
+      "rationale": "Can an agent extract clean, self-contained passages to quote as citations?",
+      "keyFinding": "63% pages have rich headings; 75% meet depth threshold.",
+      "status": "Moderate",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "structural-clarity",
+      "signal": "Structural Clarity",
+      "score": 73,
+      "rationale": "Clean semantic HTML structure that survives extraction to markdown.",
+      "keyFinding": "75% clean heading hierarchy; 75% have single H1.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "content-depth",
+      "signal": "Content Depth",
+      "score": 81,
+      "rationale": "Substantive long-form content that covers topics with depth and breadth.",
+      "keyFinding": "75% pages meet depth threshold across 4 template types.",
+      "status": "Strong",
+      "fixPriority": "Quick Win"
+    }
+  ],
+  "pagesForReview": [
+    {
+      "url": "https://www.notion.com/",
+      "pageType": "home",
+      "score": 88,
+      "maxScore": 112,
+      "aiView": {
+        "title": "The AI workspace that works for you. | Notion",
+        "metaDescription": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
+        "h1": [
+          "Meet the night shift."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Keep work moving 24/7.",
+          "Automate repetitive work for your team.",
+          "See what Custom Agents can do",
+          "Triage product feedback →",
+          "Resolve support tickets in Slack →",
+          "Respond to security alerts faster →",
+          "Automate weekly reporting →",
+          "Create your own Custom Agent →",
+          "Ask your on-demand assistants.",
+          "You assign the tasks. Notion Agent does the work.",
+          "One search for everything.",
+          "Perfect notes, every time.",
+          "Bring all your work together.",
+          "Simple and powerful.",
+          "One source of truth for teams and agents.",
+          "Less tracking. More progress."
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 119,
+        "textExcerpt": "Play Trusted by 98% of the Forbes Cloud 100 Keep work moving 24/7. Q&A agents Answers questions instantly using knowledge you already have. Task routing agents Assigns, prioritizes, and routes tasks on its own. Reporting agents Summarizes, writes, and sends reports for you. Create your own Make a Custom Agent for any work that repeats. Q&A agents Answers questions instantly using knowledge you already have. See what Custom Agents can do Triage product feedback → Resolve support tickets in Slack → Respond to security alerts faster → Automate weekly reporting → Create your own Custom Agent → Ask your on-demand assistants. Bring all your work together. Trusted by teams that ship. There’s power in a single platform where you can do all your work. Notion is that single place. Read the full story → View the video Streamlined workflows to reduce timelines by 3x. → “Agents get created in three minutes between meetings, then hours of manual operational work disappear.” → “Notion understands that you can solve a lot of problems with one tool.” → “Notion has been the most powerful and impactful way to streamline our workflow.” → “Using the most AI-native tools like Notion is an important competitive advantage for us.” → One hub for work and AI keeps everyone informed and work flowing. → Over 100M users worldwide #1 knowledge base 3 years running (G2) #1 AI enterprise search (G2) #1 rated AI writing (G2) 62% of Fortune 100 Over 50% of YC companies 1.4M+ community members Over 100M users worldwide #1 knowledge base 3 years running (G2) #1 AI enterprise search (G2) #1 rated AI writing (G2) 62% of Fortune 100 Over 50% of YC companies 1.4M+ community members Over 100M users worldwide #1 knowledge base 3 years running (G2) #1 AI enterprise search (G2) #1 rated AI writing (G2) 62% of Fortune 100 Over 50% of YC companies 1.4M+ community members",
+        "bodyWordCount": 626,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/",
+        "hasOg": true,
+        "imgCount": 66,
+        "imgsWithAlt": 20,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://www.notion.com/product/ai",
+      "pageType": "product",
+      "score": 96,
+      "maxScore": 112,
+      "aiView": {
+        "title": "Meet your AI team | Notion",
+        "metaDescription": "One tool that does it all. Search, generate, analyze, and chat—right inside Notion.",
+        "h1": [
+          "Meet your 24/7 AI team"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "AI that works where your team works. Try for free.",
+          "Free",
+          "Business Recommended",
+          "Custom Agents automate work that repeats.",
+          "Your Notion Agent can build, edit, and take action.",
+          "Enterprise Search finds answers across all your apps.",
+          "AI Meeting Notes gives your team perfect meeting memory.",
+          "Designed for teams.",
+          "Usage &amp; analytics dashboards",
+          "Custom permissions",
+          "Model agnostic",
+          "Governance tools &amp; controls",
+          "Trusted by enterprise.",
+          "No training on your data",
+          "SOC 2 Type 2 &amp; ISO 27001",
+          "GDPR &amp; CCPA"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 122,
+        "textExcerpt": "Trusted by teams at Agents Enterprise search AI Meeting Notes Admin controls Enterprise Search 16:10 Admin Controls 16:10 If it’s something that’s repetitive, we have a Notion Agent for it. Ben Levick Head of AI & Operations, Ramp AI that works where your team works. Try for free. Free For individuals to organize personal projects and life. Sign up Includes: Trial AI capabilities like generating docs, or autofilling databases Trial of Notion AI Capture, organize, and act on responses right inside Notion. Basic forms Publish a Notion page to the web Basic sites Connect multiple Calendars to manage work and time together. Notion Calendar Connect your Gmail for an AI-powered, personalized inbox. Notion Mail (Syncs with Gmail) Organize hundreds or thousands of items in one place, like projects or tasks Databases including subtasks, dependencies, custom properties and more Business Recommended For growing businesses to streamline teamwork. Get started Everything in Plus, and: Does work for you. Completes complex, multi-step tasks using context from Notion, your connected apps, and the web. Notion Agent AI agents handle repetitive tasks autonomously, so your team doesn’t have to. Free to try, then $10 per 1,000 credits. Custom Agents Automate your meeting notes and follow-ups, no bot needed AI Meeting Notes Search across connected apps like Slack, Github & more Enterprise Search Beta Manage employee access at scale with secure single sign-on. SAML SSO Collaborate in Notion databases without giving access to the entire database. Limit access to rows where the collaborator is assigned. Granular database permissions Add a verified badge to pages that are up to date. Appears in search results and AI citations. Verify any page Create teamspaces that can’t be seen or discovered by anyone except those you add. Great for sensitive information like company planning or performance reviews. Private teamspaces Verify ownership of an email domain to access advanced security features i",
+        "bodyWordCount": 1595,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/product/ai",
+        "hasOg": true,
+        "imgCount": 22,
+        "imgsWithAlt": 19,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://www.notion.com/product/ai-meeting-notes",
+      "pageType": "product",
+      "score": 88,
+      "maxScore": 112,
+      "aiView": {
+        "title": "AI Meeting Notes—Perfect meeting memory | Notion",
+        "metaDescription": "Capture every detail and deliver organized summaries—right where you plan, collaborate, and get things done.",
+        "h1": [
+          "Perfect meeting memory."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Tailored to every meeting.",
+          "Works everywhere you do.",
+          "Works with any video tool",
+          "Even for face-to-face",
+          "Syncs with your calendar",
+          "The only place where notes turn into progress.",
+          "Action items become your to-dos",
+          "Projects are updated automatically",
+          "Turn notes into follow-ups that land",
+          "Find answers when you want them",
+          "Security and privacy at the highest standards.",
+          "Stop splitting your attention in meetings.",
+          "The Business plan is designed for your best work.",
+          "Free",
+          "Business Recommended",
+          "Questions &amp; Answers"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 92,
+        "textExcerpt": "Pause Uh-oh! It looks like your ad blocker is preventing the video from playing. Trusted by those at Tailored to every meeting. Every summary gives you exactly what you need to move work forward. 1:1s Team syncs Client calls Interviews Brainstorms AI Meeting - 1on1 AI Meeting - Events AI Meeting - ClientCalls AI Meeting - Interviews AI Meeting - Events Works everywhere you do. Capture conversations anywhere. Sync your calendar, and note-taking happens automatically. Works with any video tool It transcribes your system’s audio and mic. No setup, no bots. Even for face-to-face Capture notes in person on any device. Syncs with your calendar Notes get created, started, and shared with attendees for you. The only place where notes turn into progress. Act on meeting outcomes in Notion. Notion AI handles the follow-ups so you can focus on what’s next. Action items become your to-dos Your Notion Agent can help assign tasks with owners, priority levels and due dates, making sure they get done. Projects are updated automatically Get your Notion Agent to keep projects updated after meeting with new statuses, completed tasks, and revised timelines. Turn notes into follow-ups that land Create meeting recaps tailored to your audience with a simple prompt. Find answers when you want them Ask anything about past meetings and get context-rich answers. Security and privacy at the highest standards. Trusted by Fortune 500 companies worldwide with enterprise-grade protections built in. No training on your data We have contractual agreements with our AI subprocessors that prohibit the use of customer data to train their models. Configurable transcript retention Workspace owners can set auto-transcript deletion windows (Enterprise plan only) and decide whether to store audio locally. Built-in safeguards With audit logs, granular permissions, and SSO, your sensitive work stays secure. Consent disclosures Clear in-product reminders to obtain consent before using AI Meeting Notes. Secure en",
+        "bodyWordCount": 1324,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/product/ai-meeting-notes",
+        "hasOg": true,
+        "imgCount": 30,
+        "imgsWithAlt": 22,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://www.notion.com/product/try-ai-meeting-notes",
+      "pageType": "product",
+      "score": 78,
+      "maxScore": 112,
+      "aiView": {
+        "title": "AI Meeting Notes—Perfect meeting memory | Notion",
+        "metaDescription": "Capture every detail and deliver organized summaries—right where you plan, collaborate, and get things done.",
+        "h1": [
+          "Perfect meeting memory."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Tailored to every meeting.",
+          "Works everywhere you do.",
+          "Works with any video tool",
+          "Even for face-to-face",
+          "Syncs with your calendar",
+          "The only place where notes turn into progress.",
+          "Action items become your to-dos",
+          "Projects are updated automatically",
+          "Turn notes into follow-ups that land",
+          "Find answers when you want them",
+          "Security and privacy at the highest standards.",
+          "Stop splitting your attention in meetings.",
+          "The plan designed for your best work.",
+          "Notion Agent helps move work forward",
+          "Where all your work comes together",
+          "Built to scale"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 90,
+        "textExcerpt": "Pause Uh-oh! It looks like your ad blocker is preventing the video from playing. Trusted by those at Tailored to every meeting. Every summary gives you exactly what you need to move work forward. 1:1s Team syncs Client calls Interviews Brainstorms AI Meeting - 1on1 AI Meeting - Events AI Meeting - ClientCalls AI Meeting - Interviews AI Meeting - Events Works everywhere you do. Capture conversations anywhere. Sync your calendar, and note-taking happens automatically. Works with any video tool It transcribes your system’s audio and mic. No setup, no bots. Even for face-to-face Capture notes in person on any device. Syncs with your calendar Notes get created, started, and shared with attendees for you. The only place where notes turn into progress. Act on meeting outcomes in Notion. Notion AI handles the follow-ups so you can focus on what’s next. Action items become your to-dos Your Notion Agent can help assign tasks with owners, priority levels and due dates, making sure they get done. Projects are updated automatically Get your Notion Agent to keep projects updated after meeting with new statuses, completed tasks, and revised timelines. Turn notes into follow-ups that land Create meeting recaps tailored to your audience with a simple prompt. Find answers when you want them Ask anything about past meetings and get context-rich answers. Security and privacy at the highest standards. Trusted by Fortune 500 companies worldwide with enterprise-grade protections built in. No training on your data We have contractual agreements with our AI subprocessors that prohibit the use of customer data to train their models. Configurable transcript retention Workspace owners can set auto-transcript deletion windows (Enterprise plan only) and decide whether to store audio locally. Built-in safeguards With audit logs, granular permissions, and SSO, your sensitive work stays secure. Consent disclosures Clear in-product reminders to obtain consent before using AI Meeting Notes. Secure en",
+        "bodyWordCount": 1118,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": true,
+        "canonical": "https://www.notion.com/product/try-ai-meeting-notes",
+        "hasOg": true,
+        "imgCount": 29,
+        "imgsWithAlt": 21,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://www.notion.com/affiliates",
+      "pageType": "other",
+      "score": 96,
+      "maxScore": 112,
+      "aiView": {
+        "title": "Join Notion&#x27;s Affiliate Program",
+        "metaDescription": "Refer Notion to your friends and followers, and earn up to $50 per activated sign up plus 20% of year one revenue for each referral you drive. No limits to how much you can earn.",
+        "h1": [
+          "Join Notion&#x27;s Affiliate Program."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "How it works.",
+          "Join the program",
+          "Promote Notion to your audience",
+          "Earn rewards",
+          "Who can apply?",
+          "FAQs"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 90,
+        "textExcerpt": "How it works. Join the program Apply to become a Notion affiliate. Promote Notion to your audience Share your unique affiliate link through your channels. You’ll have access to our Affiliates Resource Center with promotional best practices, guides, videos, and more. Earn rewards Earn commissions up to $50 per activated sign up plus 20% of year one revenue for each referral you drive. It’s easy to generate multiple links and track your rewards through PartnerStack. I love sharing the tools I build inside of Notion. And Notion's affiliate program lets me get paid doing the things I already wanted to do. Thomas Frank Template Creator Who can apply? Bloggers and writers ✓ Entrepreneurs ✓ Educators ✓ Media networks (news, podcasts) ✓ Email newsletters ✓ Content creators & influencers ✓ Notion community leaders, ambassadors, and template creators ✓ AI influencers & content creators ✓ FAQs What is the Notion Affiliate Program? The affiliate program is a way for bloggers, writers, community owners, entrepreneurs, influencers, Notion creators, and others to spread the word about Notion and earn financial rewards. What qualifies as a successful conversion? Net new workspaces that upgrade to a paid Plus or Business plan within 180 days of clicking your affiliate link will be eligible for the affiliate commission. Commissions are paid on a last-click basis, so your link must be the last touch point before the user signed up. How can I create, track, and promote my affiliate link? You can create multiple links and see your stats in your dashboard by signing in to PartnerStack . Once you receive your personalized affiliate link, we recommend that you promote it on your blog, social profile, website, videos, etc (the more places the better). When you post or distribute content about Notion, your message must make it obvious that you have a financially compensated relationship with Notion. We need all promotions to be FTC compliant. A helpful guide can be found here . What if a use",
+        "bodyWordCount": 774,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/affiliates",
+        "hasOg": true,
+        "imgCount": 5,
+        "imgsWithAlt": 4,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2
+        ]
+      }
+    }
+  ],
+  "pageAudits": [
+    {
+      "url": "https://www.notion.com/",
+      "score": 88,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (45 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (124 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.notion.com/"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 119 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "20/66 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 626 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "The AI workspace that works for you. | Notion",
+        "metaDescription": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
+        "h1": [
+          "Meet the night shift."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Keep work moving 24/7.",
+          "Automate repetitive work for your team.",
+          "See what Custom Agents can do",
+          "Triage product feedback →",
+          "Resolve support tickets in Slack →",
+          "Respond to security alerts faster →",
+          "Automate weekly reporting →",
+          "Create your own Custom Agent →",
+          "Ask your on-demand assistants.",
+          "You assign the tasks. Notion Agent does the work.",
+          "One search for everything.",
+          "Perfect notes, every time.",
+          "Bring all your work together.",
+          "Simple and powerful.",
+          "One source of truth for teams and agents.",
+          "Less tracking. More progress."
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 119,
+        "textExcerpt": "Play Trusted by 98% of the Forbes Cloud 100 Keep work moving 24/7. Q&A agents Answers questions instantly using knowledge you already have. Task routing agents Assigns, prioritizes, and routes tasks on its own. Reporting agents Summarizes, writes, and sends reports for you. Create your own Make a Custom Agent for any work that repeats. Q&A agents Answers questions instantly using knowledge you already have. See what Custom Agents can do Triage product feedback → Resolve support tickets in Slack → Respond to security alerts faster → Automate weekly reporting → Create your own Custom Agent → Ask your on-demand assistants. Bring all your work together. Trusted by teams that ship. There’s power in a single platform where you can do all your work. Notion is that single place. Read the full story → View the video Streamlined workflows to reduce timelines by 3x. → “Agents get created in three minutes between meetings, then hours of manual operational work disappear.” → “Notion understands that you can solve a lot of problems with one tool.” → “Notion has been the most powerful and impactful way to streamline our workflow.” → “Using the most AI-native tools like Notion is an important competitive advantage for us.” → One hub for work and AI keeps everyone informed and work flowing. → Over 100M users worldwide #1 knowledge base 3 years running (G2) #1 AI enterprise search (G2) #1 rated AI writing (G2) 62% of Fortune 100 Over 50% of YC companies 1.4M+ community members Over 100M users worldwide #1 knowledge base 3 years running (G2) #1 AI enterprise search (G2) #1 rated AI writing (G2) 62% of Fortune 100 Over 50% of YC companies 1.4M+ community members Over 100M users worldwide #1 knowledge base 3 years running (G2) #1 AI enterprise search (G2) #1 rated AI writing (G2) 62% of Fortune 100 Over 50% of YC companies 1.4M+ community members",
+        "bodyWordCount": 626,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/",
+        "hasOg": true,
+        "imgCount": 66,
+        "imgsWithAlt": 20,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "pageType": "home"
+    },
+    {
+      "url": "https://www.notion.com/about",
+      "score": 96,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (27 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (106 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.notion.com/about"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 90 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "15/17 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 747 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (2 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Why we built Notion – About",
+        "metaDescription": "A story of tools, the future of work, and how we want to blend your workflow into an all-in-one workspace.",
+        "h1": [
+          "About Notion"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "A story of tools and the future of work",
+          "Join us",
+          "In the news"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 90,
+        "textExcerpt": "About Notion A story of tools and the future of work Hi there! If you’re reading this, you’re probably like me—spending most of your days in your office, in front of a computer. You probably have fifteen tabs open: one for email, one for Slack, one for Google Docs, and on, and on… But have you ever thought about where these “work tools” came from? Or why there are so many of them? To answer these questions, and to explain why we created Notion, we have to travel back in time. As people flooded to factories during the Industrial Revolution, many tools were invented to ease the management overload. Typewriters replaced illegible handwriting. File cabinets stored more information than any clerk could remember (and also won the gold medal at the 1893 Chicago World’s Fair!) Tools like these paved the way for offices as we know them today. Fast forward to the 1950s, when computers came into the workplace. At first, they were lifeless, room-sized monsters that operated on paper and punch cards. They were used solely for number-crunching. Then something magical happened in the 1970s! A generation of pioneers saw the computer as something far beyond a number-crunching machine. They dreamt a future where computers could amplify imagination (Alan Kay), augment intellect (Doug Engelbart), and expand our thoughts far beyond text on paper (Ted Nelson). A tool unlike anything we have seen before. Play Uh-oh! It looks like your ad blocker is preventing the video from playing. Please watch it on YouTube But things didn’t turn out that way. As the legend goes, when Steve Jobs “borrowed” the ideas behind personal computing from Xerox PARC, many subtle, but crucial, differences were lost. Hit play and listen to the man himself. And that’s where we are today. Google Docs made typewriters multiplayer. Dropbox brought file cabinets to the cloud. But conceptually, they evolved little beyond their Industrial Revolution ancestors. We duct-tape everything together with emails, copy/paste, and",
+        "bodyWordCount": 747,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/about",
+        "hasOg": true,
+        "imgCount": 17,
+        "imgsWithAlt": 15,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "pageType": "about"
+    },
+    {
+      "url": "https://www.notion.com/login",
+      "score": 50,
+      "maxScore": 112,
+      "summary": "Needs work. AI agents may miss context or trust signals.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": false,
+          "points": 10,
+          "details": "Found title (6 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (157 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.notion.so/login"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": false,
+          "points": 8,
+          "details": "Found 0 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": false,
+          "points": 10,
+          "details": "Found 0 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "1/1 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": false,
+          "points": 12,
+          "details": "Estimated 0 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "No headings found — AI agents have no structural anchors to chunk content."
+        }
+      ],
+      "aiView": {
+        "title": "Notion",
+        "metaDescription": "A collaborative AI workspace, built on your company context. Build and orchestrate agents right alongside your team's projects, meetings, and connected apps.",
+        "h1": [],
+        "h1Count": 0,
+        "headings": [],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 0,
+        "textExcerpt": "",
+        "bodyWordCount": 0,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.so/login",
+        "hasOg": true,
+        "imgCount": 1,
+        "imgsWithAlt": 1,
+        "headingLevels": []
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.notion.com/signup",
+      "score": 50,
+      "maxScore": 112,
+      "summary": "Needs work. AI agents may miss context or trust signals.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": false,
+          "points": 10,
+          "details": "Found title (6 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (157 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.notion.so/signup"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": false,
+          "points": 8,
+          "details": "Found 0 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": false,
+          "points": 10,
+          "details": "Found 0 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "1/1 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": false,
+          "points": 12,
+          "details": "Estimated 0 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "No headings found — AI agents have no structural anchors to chunk content."
+        }
+      ],
+      "aiView": {
+        "title": "Notion",
+        "metaDescription": "A collaborative AI workspace, built on your company context. Build and orchestrate agents right alongside your team's projects, meetings, and connected apps.",
+        "h1": [],
+        "h1Count": 0,
+        "headings": [],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 0,
+        "textExcerpt": "",
+        "bodyWordCount": 0,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.so/signup",
+        "hasOg": true,
+        "imgCount": 1,
+        "imgsWithAlt": 1,
+        "headingLevels": []
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.notion.com/product/ai",
+      "score": 96,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (26 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (83 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.notion.com/product/ai"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 122 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "19/22 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1595 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Meet your AI team | Notion",
+        "metaDescription": "One tool that does it all. Search, generate, analyze, and chat—right inside Notion.",
+        "h1": [
+          "Meet your 24/7 AI team"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "AI that works where your team works. Try for free.",
+          "Free",
+          "Business Recommended",
+          "Custom Agents automate work that repeats.",
+          "Your Notion Agent can build, edit, and take action.",
+          "Enterprise Search finds answers across all your apps.",
+          "AI Meeting Notes gives your team perfect meeting memory.",
+          "Designed for teams.",
+          "Usage &amp; analytics dashboards",
+          "Custom permissions",
+          "Model agnostic",
+          "Governance tools &amp; controls",
+          "Trusted by enterprise.",
+          "No training on your data",
+          "SOC 2 Type 2 &amp; ISO 27001",
+          "GDPR &amp; CCPA"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 122,
+        "textExcerpt": "Trusted by teams at Agents Enterprise search AI Meeting Notes Admin controls Enterprise Search 16:10 Admin Controls 16:10 If it’s something that’s repetitive, we have a Notion Agent for it. Ben Levick Head of AI & Operations, Ramp AI that works where your team works. Try for free. Free For individuals to organize personal projects and life. Sign up Includes: Trial AI capabilities like generating docs, or autofilling databases Trial of Notion AI Capture, organize, and act on responses right inside Notion. Basic forms Publish a Notion page to the web Basic sites Connect multiple Calendars to manage work and time together. Notion Calendar Connect your Gmail for an AI-powered, personalized inbox. Notion Mail (Syncs with Gmail) Organize hundreds or thousands of items in one place, like projects or tasks Databases including subtasks, dependencies, custom properties and more Business Recommended For growing businesses to streamline teamwork. Get started Everything in Plus, and: Does work for you. Completes complex, multi-step tasks using context from Notion, your connected apps, and the web. Notion Agent AI agents handle repetitive tasks autonomously, so your team doesn’t have to. Free to try, then $10 per 1,000 credits. Custom Agents Automate your meeting notes and follow-ups, no bot needed AI Meeting Notes Search across connected apps like Slack, Github & more Enterprise Search Beta Manage employee access at scale with secure single sign-on. SAML SSO Collaborate in Notion databases without giving access to the entire database. Limit access to rows where the collaborator is assigned. Granular database permissions Add a verified badge to pages that are up to date. Appears in search results and AI citations. Verify any page Create teamspaces that can’t be seen or discovered by anyone except those you add. Great for sensitive information like company planning or performance reviews. Private teamspaces Verify ownership of an email domain to access advanced security features i",
+        "bodyWordCount": 1595,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/product/ai",
+        "hasOg": true,
+        "imgCount": 22,
+        "imgsWithAlt": 19,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "product"
+    },
+    {
+      "url": "https://www.notion.com/affiliates",
+      "score": 96,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (36 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (178 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.notion.com/affiliates"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 90 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "4/5 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 774 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Join Notion&#x27;s Affiliate Program",
+        "metaDescription": "Refer Notion to your friends and followers, and earn up to $50 per activated sign up plus 20% of year one revenue for each referral you drive. No limits to how much you can earn.",
+        "h1": [
+          "Join Notion&#x27;s Affiliate Program."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "How it works.",
+          "Join the program",
+          "Promote Notion to your audience",
+          "Earn rewards",
+          "Who can apply?",
+          "FAQs"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 90,
+        "textExcerpt": "How it works. Join the program Apply to become a Notion affiliate. Promote Notion to your audience Share your unique affiliate link through your channels. You’ll have access to our Affiliates Resource Center with promotional best practices, guides, videos, and more. Earn rewards Earn commissions up to $50 per activated sign up plus 20% of year one revenue for each referral you drive. It’s easy to generate multiple links and track your rewards through PartnerStack. I love sharing the tools I build inside of Notion. And Notion's affiliate program lets me get paid doing the things I already wanted to do. Thomas Frank Template Creator Who can apply? Bloggers and writers ✓ Entrepreneurs ✓ Educators ✓ Media networks (news, podcasts) ✓ Email newsletters ✓ Content creators & influencers ✓ Notion community leaders, ambassadors, and template creators ✓ AI influencers & content creators ✓ FAQs What is the Notion Affiliate Program? The affiliate program is a way for bloggers, writers, community owners, entrepreneurs, influencers, Notion creators, and others to spread the word about Notion and earn financial rewards. What qualifies as a successful conversion? Net new workspaces that upgrade to a paid Plus or Business plan within 180 days of clicking your affiliate link will be eligible for the affiliate commission. Commissions are paid on a last-click basis, so your link must be the last touch point before the user signed up. How can I create, track, and promote my affiliate link? You can create multiple links and see your stats in your dashboard by signing in to PartnerStack . Once you receive your personalized affiliate link, we recommend that you promote it on your blog, social profile, website, videos, etc (the more places the better). When you post or distribute content about Notion, your message must make it obvious that you have a financially compensated relationship with Notion. We need all promotions to be FTC compliant. A helpful guide can be found here . What if a use",
+        "bodyWordCount": 774,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/affiliates",
+        "hasOg": true,
+        "imgCount": 5,
+        "imgsWithAlt": 4,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://www.notion.com/product/ai-meeting-notes",
+      "score": 88,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (48 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (108 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.notion.com/product/ai-meeting-notes"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 92 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "22/30 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1324 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "AI Meeting Notes—Perfect meeting memory | Notion",
+        "metaDescription": "Capture every detail and deliver organized summaries—right where you plan, collaborate, and get things done.",
+        "h1": [
+          "Perfect meeting memory."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Tailored to every meeting.",
+          "Works everywhere you do.",
+          "Works with any video tool",
+          "Even for face-to-face",
+          "Syncs with your calendar",
+          "The only place where notes turn into progress.",
+          "Action items become your to-dos",
+          "Projects are updated automatically",
+          "Turn notes into follow-ups that land",
+          "Find answers when you want them",
+          "Security and privacy at the highest standards.",
+          "Stop splitting your attention in meetings.",
+          "The Business plan is designed for your best work.",
+          "Free",
+          "Business Recommended",
+          "Questions &amp; Answers"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 92,
+        "textExcerpt": "Pause Uh-oh! It looks like your ad blocker is preventing the video from playing. Trusted by those at Tailored to every meeting. Every summary gives you exactly what you need to move work forward. 1:1s Team syncs Client calls Interviews Brainstorms AI Meeting - 1on1 AI Meeting - Events AI Meeting - ClientCalls AI Meeting - Interviews AI Meeting - Events Works everywhere you do. Capture conversations anywhere. Sync your calendar, and note-taking happens automatically. Works with any video tool It transcribes your system’s audio and mic. No setup, no bots. Even for face-to-face Capture notes in person on any device. Syncs with your calendar Notes get created, started, and shared with attendees for you. The only place where notes turn into progress. Act on meeting outcomes in Notion. Notion AI handles the follow-ups so you can focus on what’s next. Action items become your to-dos Your Notion Agent can help assign tasks with owners, priority levels and due dates, making sure they get done. Projects are updated automatically Get your Notion Agent to keep projects updated after meeting with new statuses, completed tasks, and revised timelines. Turn notes into follow-ups that land Create meeting recaps tailored to your audience with a simple prompt. Find answers when you want them Ask anything about past meetings and get context-rich answers. Security and privacy at the highest standards. Trusted by Fortune 500 companies worldwide with enterprise-grade protections built in. No training on your data We have contractual agreements with our AI subprocessors that prohibit the use of customer data to train their models. Configurable transcript retention Workspace owners can set auto-transcript deletion windows (Enterprise plan only) and decide whether to store audio locally. Built-in safeguards With audit logs, granular permissions, and SSO, your sensitive work stays secure. Consent disclosures Clear in-product reminders to obtain consent before using AI Meeting Notes. Secure en",
+        "bodyWordCount": 1324,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://www.notion.com/product/ai-meeting-notes",
+        "hasOg": true,
+        "imgCount": 30,
+        "imgsWithAlt": 22,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "product"
+    },
+    {
+      "url": "https://www.notion.com/product/try-ai-meeting-notes",
+      "score": 78,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (48 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (108 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://www.notion.com/product/try-ai-meeting-notes"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 90 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "21/29 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1118 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": false,
+          "points": 10,
+          "details": "Page has noindex directive."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "AI Meeting Notes—Perfect meeting memory | Notion",
+        "metaDescription": "Capture every detail and deliver organized summaries—right where you plan, collaborate, and get things done.",
+        "h1": [
+          "Perfect meeting memory."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Tailored to every meeting.",
+          "Works everywhere you do.",
+          "Works with any video tool",
+          "Even for face-to-face",
+          "Syncs with your calendar",
+          "The only place where notes turn into progress.",
+          "Action items become your to-dos",
+          "Projects are updated automatically",
+          "Turn notes into follow-ups that land",
+          "Find answers when you want them",
+          "Security and privacy at the highest standards.",
+          "Stop splitting your attention in meetings.",
+          "The plan designed for your best work.",
+          "Notion Agent helps move work forward",
+          "Where all your work comes together",
+          "Built to scale"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 90,
+        "textExcerpt": "Pause Uh-oh! It looks like your ad blocker is preventing the video from playing. Trusted by those at Tailored to every meeting. Every summary gives you exactly what you need to move work forward. 1:1s Team syncs Client calls Interviews Brainstorms AI Meeting - 1on1 AI Meeting - Events AI Meeting - ClientCalls AI Meeting - Interviews AI Meeting - Events Works everywhere you do. Capture conversations anywhere. Sync your calendar, and note-taking happens automatically. Works with any video tool It transcribes your system’s audio and mic. No setup, no bots. Even for face-to-face Capture notes in person on any device. Syncs with your calendar Notes get created, started, and shared with attendees for you. The only place where notes turn into progress. Act on meeting outcomes in Notion. Notion AI handles the follow-ups so you can focus on what’s next. Action items become your to-dos Your Notion Agent can help assign tasks with owners, priority levels and due dates, making sure they get done. Projects are updated automatically Get your Notion Agent to keep projects updated after meeting with new statuses, completed tasks, and revised timelines. Turn notes into follow-ups that land Create meeting recaps tailored to your audience with a simple prompt. Find answers when you want them Ask anything about past meetings and get context-rich answers. Security and privacy at the highest standards. Trusted by Fortune 500 companies worldwide with enterprise-grade protections built in. No training on your data We have contractual agreements with our AI subprocessors that prohibit the use of customer data to train their models. Configurable transcript retention Workspace owners can set auto-transcript deletion windows (Enterprise plan only) and decide whether to store audio locally. Built-in safeguards With audit logs, granular permissions, and SSO, your sensitive work stays secure. Consent disclosures Clear in-product reminders to obtain consent before using AI Meeting Notes. Secure en",
+        "bodyWordCount": 1118,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": true,
+        "canonical": "https://www.notion.com/product/try-ai-meeting-notes",
+        "hasOg": true,
+        "imgCount": 29,
+        "imgsWithAlt": 21,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "product"
+    }
+  ]
+}

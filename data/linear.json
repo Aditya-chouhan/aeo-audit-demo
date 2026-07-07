@@ -1,0 +1,1847 @@
+{
+  "url": "https://linear.app/",
+  "generatedAt": "2026-07-07T09:39:09.652Z",
+  "crawledPages": 8,
+  "maxPages": 8,
+  "scoring": {
+    "foundationalScore": 48,
+    "heuristicIntelligenceScore": 65,
+    "provisionalScore": 57,
+    "provisionalGrade": "C-",
+    "note": "provisionalScore uses a deterministic heuristic for the intelligence half. The agent should replace heuristicIntelligenceScore with its own 6-dimension LLM evaluation, then compute finalScore = round(0.5*foundationalScore + 0.5*llmIntelligenceScore)."
+  },
+  "checks": [
+    {
+      "id": "title",
+      "label": "Clear page title",
+      "points": 10,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "meta-description",
+      "label": "Meta description",
+      "points": 10,
+      "passed": false,
+      "details": "5/8 pages passed this check."
+    },
+    {
+      "id": "canonical",
+      "label": "Canonical URL",
+      "points": 8,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "h1",
+      "label": "Single H1 heading",
+      "points": 8,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "schema",
+      "label": "Structured data present",
+      "points": 8,
+      "passed": false,
+      "details": "0/8 pages passed this check."
+    },
+    {
+      "id": "schema-types",
+      "label": "Schema types identified",
+      "points": 8,
+      "passed": false,
+      "details": "0/8 pages passed this check."
+    },
+    {
+      "id": "og",
+      "label": "Open Graph basics",
+      "points": 8,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "internal-links",
+      "label": "Internal linking",
+      "points": 10,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "image-alt",
+      "label": "Image alt coverage",
+      "points": 8,
+      "passed": false,
+      "details": "4/8 pages passed this check."
+    },
+    {
+      "id": "text-depth",
+      "label": "Readable content depth",
+      "points": 12,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "indexability",
+      "label": "Indexable for discovery",
+      "points": 10,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "ai-meta-tags",
+      "label": "AI-accessible meta tags",
+      "points": 6,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "heading-hierarchy",
+      "label": "Content structure",
+      "points": 6,
+      "passed": false,
+      "details": "5/8 pages passed this check."
+    },
+    {
+      "id": "llms-txt",
+      "label": "llms.txt valid",
+      "passed": true,
+      "points": 10,
+      "details": "Valid llms.txt (9717 chars) + llms-full.txt."
+    },
+    {
+      "id": "ai-bot-access",
+      "label": "AI bot access",
+      "passed": true,
+      "points": 12,
+      "details": "No AI bots blocked in robots.txt."
+    },
+    {
+      "id": "rss-feed",
+      "label": "RSS/Atom feed",
+      "passed": false,
+      "points": 8,
+      "details": "No RSS/Atom feed found."
+    }
+  ],
+  "coverage": [
+    {
+      "pageType": "other",
+      "pages": 5,
+      "avgScore": 76
+    },
+    {
+      "pageType": "home",
+      "pages": 1,
+      "avgScore": 41
+    },
+    {
+      "pageType": "about",
+      "pages": 1,
+      "avgScore": 77
+    },
+    {
+      "pageType": "blog",
+      "pages": 1,
+      "avgScore": 73
+    }
+  ],
+  "prioritizedFixes": [
+    {
+      "title": "Add structured data (JSON-LD) on key templates",
+      "impact": "High",
+      "effort": "Medium",
+      "why": "Agents rely on machine-readable entities and page intent signals."
+    },
+    {
+      "title": "Standardize title and meta description quality",
+      "impact": "High",
+      "effort": "Low",
+      "why": "Weak metadata reduces retrieval accuracy and snippet quality."
+    },
+    {
+      "title": "Add an RSS or Atom feed",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "RSS feeds help AI systems discover and track new content."
+    },
+    {
+      "title": "Improve content structure with clear heading levels",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "Well-structured H1 → H2 → H3 outlines help AI agents chunk, extract, and cite specific sections."
+    },
+    {
+      "title": "Add recognized schema types to JSON-LD",
+      "impact": "Medium",
+      "effort": "Medium",
+      "why": "Named types like Organization, Product, Article help AI classify your content."
+    },
+    {
+      "title": "Create a docs/knowledge section for product facts",
+      "impact": "Medium",
+      "effort": "Medium",
+      "why": "A stable docs corpus helps agents extract precise answers."
+    }
+  ],
+  "worstPages": [
+    {
+      "url": "https://linear.app/",
+      "score": 46,
+      "maxScore": 112,
+      "pageType": "home"
+    },
+    {
+      "url": "https://linear.app/changelog",
+      "score": 60,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://linear.app/blog",
+      "score": 82,
+      "maxScore": 112,
+      "pageType": "blog"
+    },
+    {
+      "url": "https://linear.app/about",
+      "score": 86,
+      "maxScore": 112,
+      "pageType": "about"
+    },
+    {
+      "url": "https://linear.app/agents",
+      "score": 88,
+      "maxScore": 112,
+      "pageType": "other"
+    }
+  ],
+  "diagnostics": {
+    "crawlMs": 4602,
+    "robotsFound": true,
+    "robotsBlockedCount": 0,
+    "discoveredFromSitemap": 8,
+    "failedPages": 0
+  },
+  "robots": {
+    "found": true,
+    "aiBotBlocked": [],
+    "sitemapCount": 8
+  },
+  "llmsTxt": {
+    "found": true,
+    "hasH1": true,
+    "hasLink": true,
+    "contentLength": 9717,
+    "fullTxtFound": true
+  },
+  "rssFeed": false,
+  "heuristicIntelligenceSignals": [
+    {
+      "id": "answer-readiness",
+      "signal": "Answer Readiness",
+      "score": 35,
+      "rationale": "Does the content lead with direct answers to questions agents get asked?",
+      "keyFinding": "0% pages have Q&A-style headings; 25% lead with definitions.",
+      "status": "Weak",
+      "fixPriority": "Critical"
+    },
+    {
+      "id": "freshness",
+      "signal": "Freshness",
+      "score": 56,
+      "rationale": "Date signals, update timestamps, and active maintenance indicators.",
+      "keyFinding": "38% pages have date signals; no RSS feed.",
+      "status": "Weak",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "quotability",
+      "signal": "Quotability",
+      "score": 66,
+      "rationale": "Can an agent extract clean, self-contained passages to quote as citations?",
+      "keyFinding": "75% pages have rich headings; 100% meet depth threshold.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "structural-clarity",
+      "signal": "Structural Clarity",
+      "score": 68,
+      "rationale": "Clean semantic HTML structure that survives extraction to markdown.",
+      "keyFinding": "63% clean heading hierarchy; 100% have single H1.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "evidence-density",
+      "signal": "Evidence Density",
+      "score": 71,
+      "rationale": "Density of statistics, data points, named sources, and in-text citations.",
+      "keyFinding": "88% pages include numeric evidence; 0% have author attribution.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "content-depth",
+      "signal": "Content Depth",
+      "score": 91,
+      "rationale": "Substantive long-form content that covers topics with depth and breadth.",
+      "keyFinding": "100% pages meet depth threshold across 4 template types.",
+      "status": "Strong",
+      "fixPriority": "Monitor"
+    }
+  ],
+  "pagesForReview": [
+    {
+      "url": "https://linear.app/",
+      "pageType": "home",
+      "score": 46,
+      "maxScore": 112,
+      "aiView": {
+        "title": "",
+        "metaDescription": "",
+        "h1": [
+          "The product development system for teams and agents The product development system for teams and agents The product development system for teams and agents"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Faster app launch",
+          "A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products.",
+          "Make product operations self-driving"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 13,
+        "textExcerpt": "Skip to content → The product development system for teams and agents The product development system for teams and agents The product development system for teams and agents Purpose-built for planning and building products. Designed for the AI era. New Coding Sessions → New Coding Sessions → Faster app launch Render UI before vehicle_state sync when minimum required state is present, instead of blocking on full refresh during iOS startup. Activity Linear created the issue via Slack on behalf of karri · 2min ago Triage Intelligence added the label Performance and iOS · 2min ago karri · 4 min ago Right now we show a spinner forever, which makes it look like the car disappeared... jori · just now @Linear can you take a stab at this? Linear connected by jori · 2 min ago Changed 2 files Draft PR awaiting your review · 2 min ago Linear moved from Todo to In Progress · just now jori connected Linear to ENG-2703 Examining the startup path... Thinking... ENG-2703 In Progress High jori Linear Labels Performance iOS Cycle Cycle 144 Project Core Performance A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products. Built for purpose Linear is shaped by the practices and principles of world-class product teams. Powered by AI agents Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs. Designed for speed Reduces noise and restores momentum to help teams ship with high velocity and focus. FIG 0.2 Built for purpose Linear is shaped by the practices and principles of world-class product teams. FIG 0.3 Powered by AI agents Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs. Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs. FIG 0.4 Designed for speed Reduces noise and restores momentum to help teams ship with high velocity and focus. Make product operations self-driving Turn conversatio",
+        "bodyWordCount": 488,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "",
+        "hasOg": false,
+        "imgCount": 17,
+        "imgsWithAlt": 3,
+        "headingLevels": [
+          1,
+          3,
+          4,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://linear.app/careers",
+      "pageType": "other",
+      "score": 88,
+      "maxScore": 112,
+      "aiView": {
+        "title": "We're hiring – Linear",
+        "metaDescription": "We are crafting the tool for teams who care about quality. Join us on our mission!",
+        "h1": [
+          "Help us craft high-quality tools"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "On a quest for quality",
+          "How we think and work",
+          "Open roles",
+          "Product",
+          "Features",
+          "Company",
+          "Resources",
+          "Connect",
+          "Legal"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 71,
+        "textExcerpt": "Help us craft high-quality tools We are building a new species of product tool. Will you help us make it better? Open roles ↓ Elapsed 00:00 Seek to: 00:00 / Duration 00:00 Remaining − 00:00 0.25 × 0.5 × 0.75 × 1 × 1.25 × 1.5 × 1.75 × 2 × On a quest for quality We believe that there is a lost art of building software. A craftsmanship that yields products of an exceptional, almost magical, quality. It’s difficult to describe this quality with words and impossible to measure it in numbers, but you can feel it when it’s there. You know it when you experience it. To bring back this level of quality, we are building a tool that empowers product teams to do their best work. A tool with unparalleled speed, focus, and design. Building this tool requires a team of talented individuals who care deeply about the quality of their work, no matter if it’s engineering, design, or customer support. We are looking for people who share our passion for software craftsmanship and getting even the smallest details right. If that sounds like you, please reach out and join us on our quest. ›_ README A conversation on quality Karri Saarinen → Building the sync engine Tuomas Artman → How we build products Lenny’s Podcast → At home with Karri Saarinen Indie → Move fast with little process The Pragmatic Engineer → A conversation on quality Karri Saarinen Building the sync engine Tuomas Artman How we build products Lenny’s Podcast At home with Karri Saarinen Indie Move fast with little process The Pragmatic Engineer How we think and work Linear’s mission is to inspire and accelerate builders. To turn that ambition into reality, we operate based on a set of core principles that keep us focused. 01 . Ship early Simplify and ship smaller. 02 . Build with users Listen carefully and understand their problems. 03 . Know what good looks like Find and create good things. Know what needs to change to make it better. 04 . Think in principles Not in playbooks. 05 . Build things that last Put care into the",
+        "bodyWordCount": 5073,
+        "publishedDate": "PT0S",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/careers",
+        "hasOg": true,
+        "imgCount": 10,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "url": "https://linear.app/blog",
+      "pageType": "blog",
+      "score": 82,
+      "maxScore": 112,
+      "aiView": {
+        "title": "Now – Updates from the Linear team",
+        "metaDescription": "Linear product updates, thoughts on crafting beautiful products, and reflections on building a startup.",
+        "h1": [
+          "Now"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Teaching an agent to auto-fix bugs",
+          "Now Linear writes the code, too",
+          "Reviewing code in the agent era",
+          "Code review should be fast",
+          "Code Intelligence for Linear Agent",
+          "Cars24’s push to being AI-native with Linear",
+          "Changelog",
+          "How we hire at Linear",
+          "The coding agent behind 60% of Ramp’s merged PRs",
+          "Output isn’t design",
+          "How we use Linear Agent at Linear",
+          "Post mortem on Linear security incident on March 24th, 2026",
+          "Coinbase’s bet on agent-first development",
+          "Press",
+          "The New Standard: a talk with Linear, Raycast, and Anthropic at South Park Commons",
+          "AI Agents and the Future of Software Teams with Linear + Sequoia Capital"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 101,
+        "textExcerpt": "Now All Changelog Community News Craft AI Practices Press Search… Teaching an agent to auto-fix bugs Some bugs at Linear now get fixed before a single engineer picks them up. Igor has been teaching Linear Agent to catch them in triage and ship the fix on its own. Igor Sechyn · Jun 12, 2026 → Now Linear writes the code, too Linear Agent can now write code. With Coding Sessions, it can take a bug from triage all the way to a reviewed fix, without the work ever leaving Linear. Karri Saarinen · Jun 11, 2026 → Reviewing code in the agent era Agentic coding has puts real pressure on review. One of our engineers shares how he uses Linear Diffs to hold his bar high without drowning in pull requests. Maciek Pekala · Jun 10, 2026 → Code review should be fast Agents are forcing a change in how we review code. Diffs brings code reviews directly inside Linear, so that the review lives alongside all of your product context. Tuomas Artman · May 28, 2026 → Code Intelligence for Linear Agent Linear Agent can now read your codebase and answer questions from the source itself. Karri Saarinen · May 14, 2026 → Cars24’s push to being AI-native with Linear In October, Cars24 renewed its Jira license. A few weeks later, they treated that contract as a sunk cost and walked away from it. Customer story · May 13, 2026 → Changelog Initiative properties Initiatives define your company's high-level goals and organize the projects that contribute to them. To help you manage initiatives as your roadmap grows, we've added a new set of focused initiative properties: Jun 30, 2026 Agent assisted project updates Project and initiative updates keep teams aligned, but writing them means pulling out recent changes from issues, documents, and discussions. Jun 17, 2026 Coding sessions in Linear Earlier this year, we launched Linear Agent, giving teams a new way to plan and coordinate their issues and projects. Since then, we've added Code Intelligence to extend that understanding to the codebase, and MCP su",
+        "bodyWordCount": 4487,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/now",
+        "hasOg": true,
+        "imgCount": 34,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "url": "https://linear.app/changelog",
+      "pageType": "other",
+      "score": 60,
+      "maxScore": 112,
+      "aiView": {
+        "title": "",
+        "metaDescription": "",
+        "h1": [
+          "Now"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Initiative properties",
+          "Centrally manage access to Linear’s MCP server in Claude ⁠",
+          "Share filtered views ⁠",
+          "Agent assisted project updates",
+          "Desktop navigation history and pinned tabs ⁠",
+          "Private sub-teams ⁠",
+          "Build agents with Vercel Eve ⁠",
+          "Release pipeline changelogs ⁠",
+          "OAuth application manifests ⁠",
+          "Coding sessions in Linear",
+          "A coding agent your team will love ⁠",
+          "Automate the first pass ⁠",
+          "Availability and pricing ⁠",
+          "Team documents",
+          "Shared skills for Linear Agent ⁠",
+          "Issue description comments ⁠"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 111,
+        "textExcerpt": "Now All Changelog Community News Craft AI Practices Press Search… July 2, 2026 Initiative properties Initiatives define your company’s high-level goals and organize the projects that contribute to them. To help you manage initiatives as your roadmap grows, we’ve added a new set of focused initiative properties: Proposed and canceled statuses make it clear when an initiative is under consideration or has been intentionally set aside Priority communicates which initiatives are most important Labels group initiatives by product line, region, or other meaningful categories Use these properties to group and filter initiatives on any plan, or build custom initiative views on Enterprise plans. Learn more about initiative properties in the docs . Centrally manage access to Linear’s MCP server in Claude ⁠ Give employees secure access to Linear and other MCP servers in Claude, without requiring them to authenticate with each server individually. Enterprise-managed Authorization lets Okta administrators manage access and permissions centrally, and users automatically get access to the MCP servers they’re authorized to use when they sign in to Claude. Enterprise-Managed Authorization is available to Enterprise workspaces using Okta as an identity provider and Claude as an MCP client. Learn more in the docs or in the MCP specification . Share filtered views ⁠ You can now share any filtered view by copying its URL from your browser, or by pressing ⌘ / Ctrl Shift C on desktop. Share filtered views to discuss a subset of an existing view with someone else — like an issue view filtered by an assignee, or project or initiative view filtered by a label. Fixes Agents Fixed issues with editing collapsible sections inside documents and descriptions with the Linear agent API Stopped automatically cancelling and restarting active Triage Intelligence runs after issue content changes API Fixed fieldless GraphQL input metadata from turning persisted filters into match-all filters Asks Slack /",
+        "bodyWordCount": 10295,
+        "publishedDate": "PT0S",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "",
+        "hasOg": false,
+        "imgCount": 19,
+        "imgsWithAlt": 19,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "url": "https://linear.app/about",
+      "pageType": "about",
+      "score": 86,
+      "maxScore": 112,
+      "aiView": {
+        "title": "About – Linear",
+        "metaDescription": "We’re bringing magic back to software.",
+        "h1": [
+          "Building tools for the next era of product development"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "A new species of product tool",
+          "Meet the team behind Linear",
+          "Backed by the best",
+          "Built for the future. Available today.",
+          "Product",
+          "Features",
+          "Company",
+          "Resources",
+          "Connect",
+          "Legal"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 53,
+        "textExcerpt": "Building tools for the next era of product development AI is fundamentally changing how products get built. We are shaping what comes next. Elapsed 00:00 Seek to: 00:00 / Duration 00:00 Remaining − 00:00 0.25 × 0.5 × 0.75 × 1 × 1.25 × 1.5 × 1.75 × 2 × A new species of product tool Software development is at an inflection point. Artificial intelligence is fundamentally reshaping how products are built. AI increases what teams can create, but it also raises the bar for clarity and coordination. At Linear, we are building the tools for this new era of product development. A purpose-built system where teams and agents operate together in a shared, structured environment. Founded in 2019, Linear has become the tool of choice for more than 33,000 companies (including OpenAI, Coinbase, and Ramp) to plan, build, and ship their products. Our team is distributed across North America and Europe, and we’re continuing to grow internationally. What unites us is relentless focus, fast execution, and a deep care for software craftsmanship. Meet the team behind Linear We are designers and engineers. Problem solvers and storytellers. We are a diverse team of individuals, all makers at heart. We’re hiring → Karri Saarinen Co-founder, CEO Jori Lallo Co-founder, CPO Tuomas Artman Co-founder, CTO Cristina Cordova COO Nan Yu Head of Product Tom Moor Head of Engineering Casey Bertenthal Head of Sales Jamie Finnigan Head of Security Tim Qi Matthew Roberts Matthijs Wolting Josh Pyles Nathalie Alex Dominic Wong Meg Wayne Mingjie Jiang Alan Doyle Alex Suevalov Anthony Vidalez Saneel Prabhu Igor Sechyn Axel Niklasson Yun Davina Baker Jon Phey Duong Vu Rhea Purohit Mufeez Amjad Tony Wooster Ben Kinney Simone Jacobs Zoe Wellner Bojan Joveski Yann-Edern Gillet Paul Macgregor Emiel Janson Dylan Hamilton Eitan Meisels Steven DeMartini Amelia Cellar Paco Coursey Kristin Boyer Peter Travers Maciek Pekala Skyline Lau Jesse Hartheimer Aaron Quinn Lena Vu Robb Böhnke Jacob Shumway Emil Kowalski Hilary Ho",
+        "bodyWordCount": 698,
+        "publishedDate": "PT0S",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/about",
+        "hasOg": true,
+        "imgCount": 8,
+        "imgsWithAlt": 8,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    }
+  ],
+  "pageAudits": [
+    {
+      "url": "https://linear.app/",
+      "score": 46,
+      "maxScore": 112,
+      "summary": "Needs work. AI agents may miss context or trust signals.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": false,
+          "points": 10,
+          "details": "No <title> found."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": false,
+          "points": 10,
+          "details": "No meta description found."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": false,
+          "points": 8,
+          "details": "No canonical tag found."
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": false,
+          "points": 8,
+          "details": "Missing og:title and/or og:description."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 13 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "3/17 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 488 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "Heading levels skipped — weakens the content outline AI agents use for extraction."
+        }
+      ],
+      "aiView": {
+        "title": "",
+        "metaDescription": "",
+        "h1": [
+          "The product development system for teams and agents The product development system for teams and agents The product development system for teams and agents"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Faster app launch",
+          "A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products.",
+          "Make product operations self-driving"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 13,
+        "textExcerpt": "Skip to content → The product development system for teams and agents The product development system for teams and agents The product development system for teams and agents Purpose-built for planning and building products. Designed for the AI era. New Coding Sessions → New Coding Sessions → Faster app launch Render UI before vehicle_state sync when minimum required state is present, instead of blocking on full refresh during iOS startup. Activity Linear created the issue via Slack on behalf of karri · 2min ago Triage Intelligence added the label Performance and iOS · 2min ago karri · 4 min ago Right now we show a spinner forever, which makes it look like the car disappeared... jori · just now @Linear can you take a stab at this? Linear connected by jori · 2 min ago Changed 2 files Draft PR awaiting your review · 2 min ago Linear moved from Todo to In Progress · just now jori connected Linear to ENG-2703 Examining the startup path... Thinking... ENG-2703 In Progress High jori Linear Labels Performance iOS Cycle Cycle 144 Project Core Performance A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products. Built for purpose Linear is shaped by the practices and principles of world-class product teams. Powered by AI agents Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs. Designed for speed Reduces noise and restores momentum to help teams ship with high velocity and focus. FIG 0.2 Built for purpose Linear is shaped by the practices and principles of world-class product teams. FIG 0.3 Powered by AI agents Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs. Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs. FIG 0.4 Designed for speed Reduces noise and restores momentum to help teams ship with high velocity and focus. Make product operations self-driving Turn conversatio",
+        "bodyWordCount": 488,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "",
+        "hasOg": false,
+        "imgCount": 17,
+        "imgsWithAlt": 3,
+        "headingLevels": [
+          1,
+          3,
+          4,
+          2,
+          2
+        ]
+      },
+      "pageType": "home"
+    },
+    {
+      "url": "https://linear.app/agents",
+      "score": 88,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (17 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (64 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://linear.app/agents"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 65 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "7/21 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 453 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Linear for Agents",
+        "metaDescription": "Build and deploy AI agents that work alongside you as teammates.",
+        "h1": [
+          "Artificial colleagues. Natural collaboration."
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Delegate, automate, and orchestrate work",
+          "Fast, focused, and reliable. Just like the rest of your team.",
+          "Delegate issues, but not accountability",
+          "Stay in the loop every step of the way",
+          "Orchestrate tasks at scale",
+          "Agents for every use case, ready to deploy",
+          "OpenAI Codex",
+          "Cursor",
+          "GitHub Copilot",
+          "OpenAI Codex",
+          "Cursor",
+          "GitHub Copilot",
+          "Create your own agents",
+          "Product",
+          "Features",
+          "Company"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 65,
+        "textExcerpt": "Linear for Agents Artificial colleagues. Natural collaboration. Build and deploy AI agents that work alongside you as teammates. Work on complex tasks together or delegate issues end-to-end. Watch demo Cursor Agent Cursor Agent GitHub Copilot Agent Sentry Agent Leela Codex Agent Conor Delegate, automate, and orchestrate work Choose from a variety of AI agents and start ­delegating work, from code generation to other ­technical tasks. Fast, focused, and reliable. Just like the rest of your team. Agents are full members of your Linear workspace. Assign them to issues, add them to projects, or @mention them in comments. Delegate issues, but not accountability When an issue gets delegated to an agent, the human user remains the primary assignee, while the agent is added as a contributor. Stay in the loop every step of the way Agents act on your behalf, but never in the dark. Understand every change they make at a glance, or inspect the underlying reasoning. Orchestrate tasks at scale Agents can work across multiple issues simultaneously. Select tasks, assign them to an agent, and watch work move forward.",
+        "bodyWordCount": 453,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/agents",
+        "hasOg": true,
+        "imgCount": 21,
+        "imgsWithAlt": 7,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://linear.app/about",
+      "score": 86,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (14 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": false,
+          "points": 10,
+          "details": "Found description (38 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://linear.app/about"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 53 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "8/8 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 698 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "About – Linear",
+        "metaDescription": "We’re bringing magic back to software.",
+        "h1": [
+          "Building tools for the next era of product development"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "A new species of product tool",
+          "Meet the team behind Linear",
+          "Backed by the best",
+          "Built for the future. Available today.",
+          "Product",
+          "Features",
+          "Company",
+          "Resources",
+          "Connect",
+          "Legal"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 53,
+        "textExcerpt": "Building tools for the next era of product development AI is fundamentally changing how products get built. We are shaping what comes next. Elapsed 00:00 Seek to: 00:00 / Duration 00:00 Remaining − 00:00 0.25 × 0.5 × 0.75 × 1 × 1.25 × 1.5 × 1.75 × 2 × A new species of product tool Software development is at an inflection point. Artificial intelligence is fundamentally reshaping how products are built. AI increases what teams can create, but it also raises the bar for clarity and coordination. At Linear, we are building the tools for this new era of product development. A purpose-built system where teams and agents operate together in a shared, structured environment. Founded in 2019, Linear has become the tool of choice for more than 33,000 companies (including OpenAI, Coinbase, and Ramp) to plan, build, and ship their products. Our team is distributed across North America and Europe, and we’re continuing to grow internationally. What unites us is relentless focus, fast execution, and a deep care for software craftsmanship. Meet the team behind Linear We are designers and engineers. Problem solvers and storytellers. We are a diverse team of individuals, all makers at heart. We’re hiring → Karri Saarinen Co-founder, CEO Jori Lallo Co-founder, CPO Tuomas Artman Co-founder, CTO Cristina Cordova COO Nan Yu Head of Product Tom Moor Head of Engineering Casey Bertenthal Head of Sales Jamie Finnigan Head of Security Tim Qi Matthew Roberts Matthijs Wolting Josh Pyles Nathalie Alex Dominic Wong Meg Wayne Mingjie Jiang Alan Doyle Alex Suevalov Anthony Vidalez Saneel Prabhu Igor Sechyn Axel Niklasson Yun Davina Baker Jon Phey Duong Vu Rhea Purohit Mufeez Amjad Tony Wooster Ben Kinney Simone Jacobs Zoe Wellner Bojan Joveski Yann-Edern Gillet Paul Macgregor Emiel Janson Dylan Hamilton Eitan Meisels Steven DeMartini Amelia Cellar Paco Coursey Kristin Boyer Peter Travers Maciek Pekala Skyline Lau Jesse Hartheimer Aaron Quinn Lena Vu Robb Böhnke Jacob Shumway Emil Kowalski Hilary Ho",
+        "bodyWordCount": 698,
+        "publishedDate": "PT0S",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/about",
+        "hasOg": true,
+        "imgCount": 8,
+        "imgsWithAlt": 8,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "about"
+    },
+    {
+      "url": "https://linear.app/careers",
+      "score": 88,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (21 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (82 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://linear.app/careers"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 71 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "0/10 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 5073 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "We're hiring – Linear",
+        "metaDescription": "We are crafting the tool for teams who care about quality. Join us on our mission!",
+        "h1": [
+          "Help us craft high-quality tools"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "On a quest for quality",
+          "How we think and work",
+          "Open roles",
+          "Product",
+          "Features",
+          "Company",
+          "Resources",
+          "Connect",
+          "Legal"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 71,
+        "textExcerpt": "Help us craft high-quality tools We are building a new species of product tool. Will you help us make it better? Open roles ↓ Elapsed 00:00 Seek to: 00:00 / Duration 00:00 Remaining − 00:00 0.25 × 0.5 × 0.75 × 1 × 1.25 × 1.5 × 1.75 × 2 × On a quest for quality We believe that there is a lost art of building software. A craftsmanship that yields products of an exceptional, almost magical, quality. It’s difficult to describe this quality with words and impossible to measure it in numbers, but you can feel it when it’s there. You know it when you experience it. To bring back this level of quality, we are building a tool that empowers product teams to do their best work. A tool with unparalleled speed, focus, and design. Building this tool requires a team of talented individuals who care deeply about the quality of their work, no matter if it’s engineering, design, or customer support. We are looking for people who share our passion for software craftsmanship and getting even the smallest details right. If that sounds like you, please reach out and join us on our quest. ›_ README A conversation on quality Karri Saarinen → Building the sync engine Tuomas Artman → How we build products Lenny’s Podcast → At home with Karri Saarinen Indie → Move fast with little process The Pragmatic Engineer → A conversation on quality Karri Saarinen Building the sync engine Tuomas Artman How we build products Lenny’s Podcast At home with Karri Saarinen Indie Move fast with little process The Pragmatic Engineer How we think and work Linear’s mission is to inspire and accelerate builders. To turn that ambition into reality, we operate based on a set of core principles that keep us focused. 01 . Ship early Simplify and ship smaller. 02 . Build with users Listen carefully and understand their problems. 03 . Know what good looks like Find and create good things. Know what needs to change to make it better. 04 . Think in principles Not in playbooks. 05 . Build things that last Put care into the",
+        "bodyWordCount": 5073,
+        "publishedDate": "PT0S",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/careers",
+        "hasOg": true,
+        "imgCount": 10,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://linear.app/blog",
+      "score": 82,
+      "maxScore": 112,
+      "summary": "Decent base, but key machine-readable signals are missing.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (34 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (103 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://linear.app/now"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 101 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "0/34 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 4487 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "Heading levels skipped — weakens the content outline AI agents use for extraction."
+        }
+      ],
+      "aiView": {
+        "title": "Now – Updates from the Linear team",
+        "metaDescription": "Linear product updates, thoughts on crafting beautiful products, and reflections on building a startup.",
+        "h1": [
+          "Now"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Teaching an agent to auto-fix bugs",
+          "Now Linear writes the code, too",
+          "Reviewing code in the agent era",
+          "Code review should be fast",
+          "Code Intelligence for Linear Agent",
+          "Cars24’s push to being AI-native with Linear",
+          "Changelog",
+          "How we hire at Linear",
+          "The coding agent behind 60% of Ramp’s merged PRs",
+          "Output isn’t design",
+          "How we use Linear Agent at Linear",
+          "Post mortem on Linear security incident on March 24th, 2026",
+          "Coinbase’s bet on agent-first development",
+          "Press",
+          "The New Standard: a talk with Linear, Raycast, and Anthropic at South Park Commons",
+          "AI Agents and the Future of Software Teams with Linear + Sequoia Capital"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 101,
+        "textExcerpt": "Now All Changelog Community News Craft AI Practices Press Search… Teaching an agent to auto-fix bugs Some bugs at Linear now get fixed before a single engineer picks them up. Igor has been teaching Linear Agent to catch them in triage and ship the fix on its own. Igor Sechyn · Jun 12, 2026 → Now Linear writes the code, too Linear Agent can now write code. With Coding Sessions, it can take a bug from triage all the way to a reviewed fix, without the work ever leaving Linear. Karri Saarinen · Jun 11, 2026 → Reviewing code in the agent era Agentic coding has puts real pressure on review. One of our engineers shares how he uses Linear Diffs to hold his bar high without drowning in pull requests. Maciek Pekala · Jun 10, 2026 → Code review should be fast Agents are forcing a change in how we review code. Diffs brings code reviews directly inside Linear, so that the review lives alongside all of your product context. Tuomas Artman · May 28, 2026 → Code Intelligence for Linear Agent Linear Agent can now read your codebase and answer questions from the source itself. Karri Saarinen · May 14, 2026 → Cars24’s push to being AI-native with Linear In October, Cars24 renewed its Jira license. A few weeks later, they treated that contract as a sunk cost and walked away from it. Customer story · May 13, 2026 → Changelog Initiative properties Initiatives define your company's high-level goals and organize the projects that contribute to them. To help you manage initiatives as your roadmap grows, we've added a new set of focused initiative properties: Jun 30, 2026 Agent assisted project updates Project and initiative updates keep teams aligned, but writing them means pulling out recent changes from issues, documents, and discussions. Jun 17, 2026 Coding sessions in Linear Earlier this year, we launched Linear Agent, giving teams a new way to plan and coordinate their issues and projects. Since then, we've added Code Intelligence to extend that understanding to the codebase, and MCP su",
+        "bodyWordCount": 4487,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/now",
+        "hasOg": true,
+        "imgCount": 34,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "blog"
+    },
+    {
+      "url": "https://linear.app/changelog",
+      "score": 60,
+      "maxScore": 112,
+      "summary": "Needs work. AI agents may miss context or trust signals.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": false,
+          "points": 10,
+          "details": "No <title> found."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": false,
+          "points": 10,
+          "details": "No meta description found."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": false,
+          "points": 8,
+          "details": "No canonical tag found."
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": false,
+          "points": 8,
+          "details": "Missing og:title and/or og:description."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 111 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "19/19 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 10295 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "",
+        "metaDescription": "",
+        "h1": [
+          "Now"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Initiative properties",
+          "Centrally manage access to Linear’s MCP server in Claude ⁠",
+          "Share filtered views ⁠",
+          "Agent assisted project updates",
+          "Desktop navigation history and pinned tabs ⁠",
+          "Private sub-teams ⁠",
+          "Build agents with Vercel Eve ⁠",
+          "Release pipeline changelogs ⁠",
+          "OAuth application manifests ⁠",
+          "Coding sessions in Linear",
+          "A coding agent your team will love ⁠",
+          "Automate the first pass ⁠",
+          "Availability and pricing ⁠",
+          "Team documents",
+          "Shared skills for Linear Agent ⁠",
+          "Issue description comments ⁠"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 111,
+        "textExcerpt": "Now All Changelog Community News Craft AI Practices Press Search… July 2, 2026 Initiative properties Initiatives define your company’s high-level goals and organize the projects that contribute to them. To help you manage initiatives as your roadmap grows, we’ve added a new set of focused initiative properties: Proposed and canceled statuses make it clear when an initiative is under consideration or has been intentionally set aside Priority communicates which initiatives are most important Labels group initiatives by product line, region, or other meaningful categories Use these properties to group and filter initiatives on any plan, or build custom initiative views on Enterprise plans. Learn more about initiative properties in the docs . Centrally manage access to Linear’s MCP server in Claude ⁠ Give employees secure access to Linear and other MCP servers in Claude, without requiring them to authenticate with each server individually. Enterprise-managed Authorization lets Okta administrators manage access and permissions centrally, and users automatically get access to the MCP servers they’re authorized to use when they sign in to Claude. Enterprise-Managed Authorization is available to Enterprise workspaces using Okta as an identity provider and Claude as an MCP client. Learn more in the docs or in the MCP specification . Share filtered views ⁠ You can now share any filtered view by copying its URL from your browser, or by pressing ⌘ / Ctrl Shift C on desktop. Share filtered views to discuss a subset of an existing view with someone else — like an issue view filtered by an assignee, or project or initiative view filtered by a label. Fixes Agents Fixed issues with editing collapsible sections inside documents and descriptions with the Linear agent API Stopped automatically cancelling and restarting active Triage Intelligence runs after issue content changes API Fixed fieldless GraphQL input metadata from turning persisted filters into match-all filters Asks Slack /",
+        "bodyWordCount": 10295,
+        "publishedDate": "PT0S",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "",
+        "hasOg": false,
+        "imgCount": 19,
+        "imgsWithAlt": 19,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://linear.app/coding-sessions",
+      "score": 96,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (24 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (82 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://linear.app/coding-sessions"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 52 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "18/21 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 664 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Coding Sessions – Linear",
+        "metaDescription": "Linear Agent can now write code. Triage, plan, build, and review all in one place.",
+        "h1": [
+          "Assign your issues to Linear"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Start a coding session today",
+          "Product",
+          "Features",
+          "Company",
+          "Resources",
+          "Connect",
+          "Legal"
+        ],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 52,
+        "textExcerpt": "Coding Sessions Assign your issues to Linear Linear Agent can now write code using Claude Code and Codex. Triage, plan, build, and review all in one place. Watch video ENG-2498 Dimmed Status Cards +34 -18 Activity Guide Diff Submit review Preview useRideHistory.ts client/src/views/RideHistory + 21 - 14 76 77 // Build sections from ride history state - const dimmedIds : Set < string > = useComputed (() => { - const ids = new Set < string >(); - for ( const id of cancelledRideIds ) { - ids . add ( id ); - } 78 const waitingStatusById : Map < string , string > = useComputed (() => { 79 const map = new Map < string , string >(); 80 for ( const ride of ridesAwaitingPickup ) { - ids . add ( ride . id ); 81 map . set ( ride . id , \" Driver en route \" ); 82 } 83 for ( const ride of ridesInProgress ) { 84 map . set ( ride . id , \" Trip in progress \" ); 85 } 86 RideHistoryPage.tsx client/src/views/RideHistory + 2 - 1 36 background - color : $ { props . theme . color . bgBase }; 37 box - shadow : none ; 38 39 $ { props . highlighted && css ` 40 &:hover { 41 background-color: ${ props . theme . color . bgBaseHover } ; 42 opacity: 1; 43 } 44 ` } 45 ` ; 46 47 const RowContent = styled.div ` 48 display : flex ; 49 Linear Opus 4.8 Conor started this session Worked for 32s Pushed and opened a draft PR. Changes: useRideHistory.ts : build a waitingStatusById map and use it as the getLastAction byline RideHistoryPage.tsx : dimmed rows reset to full opacity Tell Linear what to do next... Start from anywhere. Kick off a coding session from an issue, a chat, a comment, or a Slack thread. Linear gathers the relevant context and gets to work. Linear Agent works where you work 01. Chat 02. Issues 03. Diffs 04. Mobile 05. Slack 06. Teams Delegate or automate. Assign issues directly, or let Linear pick them up the moment they land in Triage. Bugs can be investigated and fixed before anyone touches a keyboard. ENG-2498 DIMMED STATUS ENG-2486 TRIP COUNT Jori DIMMED STATUS CARDS FIX TRIP COUNT Au",
+        "bodyWordCount": 664,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/coding-sessions",
+        "hasOg": true,
+        "imgCount": 21,
+        "imgsWithAlt": 18,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://linear.app/config2026",
+      "score": 90,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (15 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (52 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://linear.app/config2026"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 5 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 15197 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "Only one heading level used — content lacks topic segmentation for AI chunking."
+        }
+      ],
+      "aiView": {
+        "title": "Linear x Config",
+        "metaDescription": "The product development system for teams and agents.",
+        "h1": [
+          "Linear X Config"
+        ],
+        "h1Count": 1,
+        "headings": [],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 5,
+        "textExcerpt": "Sign up → Switch to Linear → Linear Learn → AI Workflows → Live Onboarding → Enterprise → Careers → Contact us → Linear x Config ((self[Symbol.for(\"vinext.navigationRuntime\")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(\"6:[\\\"$\\\",\\\"$L18\\\",null,{\\\"methodPages\\\":{\\\"sections\\\":[{\\\"_key\\\":\\\"cc9557e4d49a\\\",\\\"links\\\":[{\\\"_key\\\":\\\"c8e0eb98e4cd\\\",\\\"linkSlug\\\":\\\"introduction\\\",\\\"linkTitle\\\":\\\"Principles \\u0026 Practices\\\",\\\"target\\\":{\\\"_createdAt\\\":\\\"2020-12-03T22:34:59Z\\\",\\\"_id\\\":\\\"a5b54df4-488e-48e9-9d2d-322fd2b86fbf\\\",\\\"_updatedAt\\\":\\\"2025-04-25T13:32:01Z\\\"},\\\"title\\\":\\\"Principles \\u0026 Practices\\\"}],\\\"title\\\":\\\"Introduction\\\"},{\\\"_key\\\":\\\"e592f452b90b\\\",\\\"links\\\":[{\\\"_key\\\":\\\"38bed4e8c7b0\\\",\\\"linkSlug\\\":\\\"product-direction\\\",\\\"linkTitle\\\":\\\"Set the product direction\\\",\\\"target\\\":{\\\"_createdAt\\\":\\\"2020-12-07T14:51:08Z\\\",\\\"_id\\\":\\\"8a114a80-b070-4e1d-926c-75dd352d7cdd\\\",\\\"_updatedAt\\\":\\\"2024-12-02T11:56:27Z\\\"},\\\"title\\\":null},{\\\"_key\\\":\\\"06e5111e7c91\\\",\\\"linkSlug\\\":\\\"set-useful-goals\\\",\\\"linkTitle\\\":\\\"Set useful goals\\\",\\\"target\\\":{\\\"_createdAt\\\":\\\"2021-01-29T22:00:56Z\\\",\\\"_id\\\":\\\"dfd6187f-b46d-4472-a251-540dd610c309\\\",\\\"_updatedAt\\\":\\\"2024-12-02T11:57:58Z\\\"},\\\"title\\\":null},{\\\"_key\\\":\\\"a9c588833483\\\",\\\"linkSlug\\\":\\\"prioritize-enablers-and-blockers\\\",\\\"linkTitle\\\":\\\"Prioritize enablers and blockers\\\",\\\"target\\\":{\\\"_createdAt\\\":\\\"2021-01-29T23:44:45Z\\\",\\\"_id\\\":\\\"3eed52e7-d69f-49a8-8282-83a90c682b99\\\",\\\"_updatedAt\\\":\\\"2024-12-02T11:58:13Z\\\"},\\\"title\\\":null},{\\\"_key\\\":\\\"c212387458ee\\\",\\\"linkSlug\\\":\\\"scope-projects\\\",\\\"linkTitle\\\":\\\"Scope projects down\\\",\\\"target\\\":{\\\"_createdAt\\\":\\\"2021-01-29T23:28:01Z\\\",\\\"_id\\\":\\\"ebcd7c9f-8981-4b8e-8792-e78ec44b55b5\\\",\\\"_updatedAt\\\":\\\"2024-12-02T11:58:26Z\\\"},\\\"title\\\":null}],\\\"title\\\":\\\"Direction\\\"},{\\\"_key\\\":\\\"c68ece0d5dbb\\\",\\\"links\\\":[{\\\"_key\\\":\\\"28b81ae927f4\\\",\\\"linkSlug\\\":\\\"building-with-momentum\\\",\\\"linkTitle\\\":\\\"Generate momentum\\\",\\\"target\\\":{\\\"_createdAt\\\":\\\"2021-01-29T21:55:37Z\\\",\\\"_id\\\":\\\"5f2",
+        "bodyWordCount": 15197,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://linear.app/config2026",
+        "hasOg": true,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": [
+          1
+        ]
+      },
+      "pageType": "other"
+    }
+  ]
+}

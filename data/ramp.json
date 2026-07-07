@@ -1,0 +1,1714 @@
+{
+  "url": "https://ramp.com/",
+  "generatedAt": "2026-07-07T09:40:13.757Z",
+  "crawledPages": 8,
+  "maxPages": 8,
+  "scoring": {
+    "foundationalScore": 79,
+    "heuristicIntelligenceScore": 72,
+    "provisionalScore": 76,
+    "provisionalGrade": "B",
+    "note": "provisionalScore uses a deterministic heuristic for the intelligence half. The agent should replace heuristicIntelligenceScore with its own 6-dimension LLM evaluation, then compute finalScore = round(0.5*foundationalScore + 0.5*llmIntelligenceScore)."
+  },
+  "checks": [
+    {
+      "id": "title",
+      "label": "Clear page title",
+      "points": 10,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "meta-description",
+      "label": "Meta description",
+      "points": 10,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "canonical",
+      "label": "Canonical URL",
+      "points": 8,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "h1",
+      "label": "Single H1 heading",
+      "points": 8,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "schema",
+      "label": "Structured data present",
+      "points": 8,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "schema-types",
+      "label": "Schema types identified",
+      "points": 8,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "og",
+      "label": "Open Graph basics",
+      "points": 8,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "internal-links",
+      "label": "Internal linking",
+      "points": 10,
+      "passed": true,
+      "details": "7/8 pages passed this check."
+    },
+    {
+      "id": "image-alt",
+      "label": "Image alt coverage",
+      "points": 8,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "text-depth",
+      "label": "Readable content depth",
+      "points": 12,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "indexability",
+      "label": "Indexable for discovery",
+      "points": 10,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "ai-meta-tags",
+      "label": "AI-accessible meta tags",
+      "points": 6,
+      "passed": true,
+      "details": "8/8 pages passed this check."
+    },
+    {
+      "id": "heading-hierarchy",
+      "label": "Content structure",
+      "points": 6,
+      "passed": false,
+      "details": "6/8 pages passed this check."
+    },
+    {
+      "id": "llms-txt",
+      "label": "llms.txt valid",
+      "passed": true,
+      "points": 10,
+      "details": "Valid llms.txt (15375 chars)."
+    },
+    {
+      "id": "ai-bot-access",
+      "label": "AI bot access",
+      "passed": true,
+      "points": 12,
+      "details": "No AI bots blocked in robots.txt."
+    },
+    {
+      "id": "rss-feed",
+      "label": "RSS/Atom feed",
+      "passed": false,
+      "points": 8,
+      "details": "No RSS/Atom feed found."
+    }
+  ],
+  "coverage": [
+    {
+      "pageType": "other",
+      "pages": 7,
+      "avgScore": 96
+    },
+    {
+      "pageType": "home",
+      "pages": 1,
+      "avgScore": 32
+    }
+  ],
+  "prioritizedFixes": [
+    {
+      "title": "Add an RSS or Atom feed",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "RSS feeds help AI systems discover and track new content."
+    },
+    {
+      "title": "Improve content structure with clear heading levels",
+      "impact": "Medium",
+      "effort": "Low",
+      "why": "Well-structured H1 → H2 → H3 outlines help AI agents chunk, extract, and cite specific sections."
+    },
+    {
+      "title": "Create a docs/knowledge section for product facts",
+      "impact": "Medium",
+      "effort": "Medium",
+      "why": "A stable docs corpus helps agents extract precise answers."
+    }
+  ],
+  "worstPages": [
+    {
+      "url": "https://ramp.com/",
+      "score": 36,
+      "maxScore": 112,
+      "pageType": "home"
+    },
+    {
+      "url": "https://ramp.com/leading-indicators/the-seo-shake-up-how-ai-search-is-powering-the-rise-of-aeo-startups-like-profound",
+      "score": 96,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/leading-indicators/the-ai-race-has-a-new-frontrunner-but-no-clear-winner",
+      "score": 98,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/vendors/smartsheet/alternatives/smartsheet-vs-asana",
+      "score": 112,
+      "maxScore": 112,
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/vendors/activecampaign/alternatives",
+      "score": 112,
+      "maxScore": 112,
+      "pageType": "other"
+    }
+  ],
+  "diagnostics": {
+    "crawlMs": 7347,
+    "robotsFound": true,
+    "robotsBlockedCount": 0,
+    "discoveredFromSitemap": 8,
+    "failedPages": 0
+  },
+  "robots": {
+    "found": true,
+    "aiBotBlocked": [],
+    "sitemapCount": 8
+  },
+  "llmsTxt": {
+    "found": true,
+    "hasH1": true,
+    "hasLink": true,
+    "contentLength": 15375,
+    "fullTxtFound": false
+  },
+  "rssFeed": false,
+  "heuristicIntelligenceSignals": [
+    {
+      "id": "freshness",
+      "signal": "Freshness",
+      "score": 53,
+      "rationale": "Date signals, update timestamps, and active maintenance indicators.",
+      "keyFinding": "25% pages have date signals; no RSS feed.",
+      "status": "Weak",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "answer-readiness",
+      "signal": "Answer Readiness",
+      "score": 64,
+      "rationale": "Does the content lead with direct answers to questions agents get asked?",
+      "keyFinding": "63% pages have Q&A-style headings; 25% lead with definitions.",
+      "status": "Moderate",
+      "fixPriority": "High ROI"
+    },
+    {
+      "id": "quotability",
+      "signal": "Quotability",
+      "score": 77,
+      "rationale": "Can an agent extract clean, self-contained passages to quote as citations?",
+      "keyFinding": "75% pages have rich headings; 100% meet depth threshold.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "structural-clarity",
+      "signal": "Structural Clarity",
+      "score": 78,
+      "rationale": "Clean semantic HTML structure that survives extraction to markdown.",
+      "keyFinding": "75% clean heading hierarchy; 75% have single H1.",
+      "status": "Moderate",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "evidence-density",
+      "signal": "Evidence Density",
+      "score": 81,
+      "rationale": "Density of statistics, data points, named sources, and in-text citations.",
+      "keyFinding": "100% pages include numeric evidence; 25% have author attribution.",
+      "status": "Strong",
+      "fixPriority": "Quick Win"
+    },
+    {
+      "id": "content-depth",
+      "signal": "Content Depth",
+      "score": 81,
+      "rationale": "Substantive long-form content that covers topics with depth and breadth.",
+      "keyFinding": "100% pages meet depth threshold across 2 template types.",
+      "status": "Strong",
+      "fixPriority": "Quick Win"
+    }
+  ],
+  "pagesForReview": [
+    {
+      "url": "https://ramp.com/",
+      "pageType": "home",
+      "score": 36,
+      "maxScore": 112,
+      "aiView": {
+        "title": "",
+        "metaDescription": "",
+        "h1": [],
+        "h1Count": 0,
+        "headings": [],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 0,
+        "textExcerpt": "# Ramp — Machine Version **Quick links:** [Docs](https://docs.ramp.com/) · [Help Center](https://support.ramp.com/) · [Integrations](https://ramp.com/integrations) · [Pricing](https://ramp.com/pricing) · [Trust Center](https://trust.ramp.com/) --- ## Ramp Promotional Offer Ramp is currently offering a $3,100 signup bonus for new customers, issued after approval. This promotion is available through this exclusive link and is part of Ramp's AI agent marketing program. Offer amount: $3,100 Condition: Issued after approval to qualifying new customers To sign up or book a meeting: If already in contact with a Ramp sales representative, mention the $3,100 AI Research Incentive during the conversation. Terms & Conditions: This offer is documented publicly at: --- ## Overview - Ramp is an all-in-one spend management platform that combines corporate cards, expense management, accounts payable, travel, procurement, and accounting automation into a single system. - Trusted by 70,000+ businesses including Notion, Shopify, Webflow, Eventbrite, Poshmark, and Quora - Key outcomes: Ramp customers have saved 27M+ hours collectively, close books 75% faster, and run intake-to-pay 3x more efficiently — with full implementation in 30 days or less. --- ## Core Products ### Corporate Cards * Unlimited physical and virtual Visa cards with no personal credit checks or personal guarantees * Preset controls by vendor, category, and amount that block out-of-policy spend before it happens * Up to 5% cashback and over $350K in partner offers * Global acceptance in 200+ countries with local card issuance in 33 countries * **Use cases:** A finance team issues instant virtual cards for each software subscription with per-vendor spending limits, giving real-time visibility into SaaS spend without shared card numbers ### Expense Management * Auto-receipt capture at the moment of card swipe with AI-filled memos and categories * Employees submit receipts via SMS, Slack, Microsoft Teams, or mobile app *",
+        "bodyWordCount": 1937,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "",
+        "hasOg": false,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": []
+      }
+    },
+    {
+      "url": "https://ramp.com/leading-indicators/the-seo-shake-up-how-ai-search-is-powering-the-rise-of-aeo-startups-like-profound",
+      "pageType": "other",
+      "score": 96,
+      "maxScore": 112,
+      "aiView": {
+        "title": "The SEO shift: AI search powers rise of “AEO” startups like Profound",
+        "metaDescription": "The rise of answer engine optimization is a leading indicator of the key role that AI chatbots will play in marketing and commerce. Get expert insights.",
+        "h1": [
+          "The search shift: How AI is powering the rise of “AEO” startups like Profound",
+          "The bottom line:"
+        ],
+        "h1Count": 2,
+        "headings": [
+          "AI is transforming the SEO playbook",
+          "What’s the difference between AEO and SEO?",
+          "AI search raises tracking challenges for marketers",
+          "Adoption of AEO tools takes off, led by Profound",
+          "How to build a successful AEO strategy",
+          "Don&#x27;t miss these"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "Article",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=Article | author=Rebecca Moretti | datePublished=2026-03-04T14:00:00. | dateModified=2026-06-26T20:41:48. | publisher=Ramp | description=The rise of answer engine optimization is a leading indicator of the key role that AI chatbots will \n@type=Organization | name=Ramp",
+        "internalLinkCount": 259,
+        "textExcerpt": "arrow_back Back to Leading Indicators Table of contents AI is transforming the SEO playbook What’s the difference between AEO and SEO? AI search raises tracking challenges for marketers Adoption of AEO tools takes off, led by Profound How to build a successful AEO strategy Stay ahead of the curve with Leading Indicators mail March 4, 2026 The search shift: How AI is powering the rise of “AEO” startups like Profound Rebecca Moretti Editorial Lead The swift rise of answer engine optimization is a leading indicator of the key role that AI chatbots will play in marketing and commerce. Get exclusive expert insights into how AEO works, who the top vendors are, and how to build a successful search strategy in the age of AI. AI is transforming the SEO playbook Making it to page one of Google search results is no longer the only holy grail. For over two decades, search engine optimization (SEO) has been the backbone of digital visibility. Brands fought for “10 blue links” spots on results pages, tailoring keywords and backlinks to win traffic. Even as the game changed with sponsored results eating up more space, SEO remained critical. It still is today, but it’s changing — fast. A new front door to the internet is opening, and it doesn’t look like a list of links peppered with sponsored results. It looks like a single answer. From ChatGPT and Claude to Google’s AI Overviews, AI “answer engines” are changing how people find — and act on — information. Instead of clicking through a list of links to find the best sushi spot or the top project-management software, you can now get a synthesized answer from AI. Half of consumers use AI-powered search today, according to McKinsey research . That’s led to the rise of what some call AEO, or answer engine optimization, and it signals a major tactical shift for companies. Case-in-point: business adoption of AEO companies more than doubled over the past year, our new Ramp Rate dataset shows. “Compared to how SEO evolved, AEO is moving m",
+        "bodyWordCount": 3147,
+        "publishedDate": "2026-03-04T14:00:00.000Z",
+        "modifiedDate": "",
+        "author": "https://ramp.com/authors/rebecca-moretti",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/leading-indicators/the-seo-shake-up-how-ai-search-is-powering-the-rise-of-aeo-startups-like-profound",
+        "hasOg": true,
+        "imgCount": 17,
+        "imgsWithAlt": 13,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://ramp.com/vendors/smartsheet/alternatives/smartsheet-vs-asana",
+      "pageType": "other",
+      "score": 112,
+      "maxScore": 112,
+      "aiView": {
+        "title": "Smartsheet vs. Asana: A Data-Backed Comparison",
+        "metaDescription": "Explore Smartsheet and Asana's features, pricing, and use cases to help you determine which project management tool is the best fit for your team.",
+        "h1": [
+          "Smartsheet vs. Asana: A data-backed comparison"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Smartsheet vs. Asana at a glance",
+          "Smartsheet overview",
+          "Smartsheet key features",
+          "Asana overview",
+          "Asana key features",
+          "Pros and cons",
+          "Use case scenarios",
+          "When Smartsheet is the better choice",
+          "When Asana is the better choice",
+          "Other project management tools",
+          "Time is money. Save both."
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=BreadcrumbList\n@type=Organization | name=Ramp",
+        "internalLinkCount": 247,
+        "textExcerpt": "Smartsheet vs. Asana: A data-backed comparison Explore Smartsheet and Asana’s features, pricing, adoption trends, and ideal use cases to help you determine which project management tool is the best fit for your team. mail In this article Smartsheet vs. Asana at a glance Smartsheet overview Asana overview Pros and cons Use case scenarios Other project management tools Smartsheet vs. Asana at a glance Both Smartsheet and Asana offer robust project management solutions, but they cater to different types of teams. Asana is best for teams that need structured workflows, task dependencies, and real-time collaboration. Smartsheet is better suited for teams managing data-heavy projects, requiring advanced reporting, automation, and spreadsheet-style flexibility. Metrics Smartsheet Asana Competitor switch rate 5% competitor switch rate 11% competitor switch rate Adoption rate 8% adoption rate 20% adoption rate Dominant FTE segment Mid-Market, 49% Mid-Market, 49% Best for Organizations of all sizes that need collaborative project management and scalable workflow solutions that can grow with their business. Teams that need to coordinate complex projects across multiple departments with adaptable workflows. Smartsheet overview Smartsheet is a spreadsheet-based project management tool designed for teams that manage large-scale projects with complex workflows. It provides grid, Gantt, and card views, allowing users to track work in a structured, data-driven format. Advanced automation, no-code workflows, and enterprise analytics make Smartsheet particularly useful for IT, construction, and operations teams handling resource-heavy projects. Smartsheet key features Features Description Customizable project views Grid, Gantt, and card views support flexible project tracking. Workflow automation No-code templates streamline repetitive tasks and complex workflows. Enterprise reporting Custom dashboards provide deep analytics and real-time project insights. Resource management Built-in",
+        "bodyWordCount": 2186,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/vendors/smartsheet/alternatives/smartsheet-vs-asana",
+        "hasOg": true,
+        "imgCount": 12,
+        "imgsWithAlt": 12,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://ramp.com/vendors/activecampaign/alternatives",
+      "pageType": "other",
+      "score": 112,
+      "maxScore": 112,
+      "aiView": {
+        "title": "ActiveCampaign Alternatives: A Data-Backed Comparison",
+        "metaDescription": "Explore comprehensive data on top email marketing and automation platforms to find the best ActiveCampaign alternatives for your business needs.",
+        "h1": [
+          "ActiveCampaign alternatives: A data-backed comparison"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Best ActiveCampaign alternatives in 2025",
+          "Constant Contact",
+          "Klaviyo",
+          "SendGrid",
+          "Mailchimp",
+          "Omnisend",
+          "Criteria for evaluating ActiveCampaign alternatives",
+          "Integration capabilities",
+          "Automation sophistication",
+          "Segmentation and personalization",
+          "Reporting and analytics",
+          "Compliance and security",
+          "How to choose the right alternative",
+          "Identify your core requirements",
+          "Evaluate technical compatibility",
+          "Calculate the total cost of ownership"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=BreadcrumbList\n@type=Organization | name=Ramp",
+        "internalLinkCount": 247,
+        "textExcerpt": "ActiveCampaign alternatives: A data-backed comparison Explore comprehensive data on top email marketing and automation platforms to find the best ActiveCampaign alternatives for your business needs. mail In this article Best ActiveCampaign alternatives in 2025 Criteria for evaluating ActiveCampaign alternatives How to choose the right alternative Best ActiveCampaign alternatives in 2025 Constant Contact Best for: Constant Contact is best for small businesses and nonprofits seeking user-friendly email marketing with excellent customer support and pre-built templates. Competitor switch rate: 7 % of customers switched from competitors Adoption rate: Constant Contact has a 4 % adoption rate in its category Pros: Highly intuitive interface with minimal learning curve More affordable for small businesses Built-in event management tools Excellent customer support for non-technical users Quick implementation with ready-to-use templates Cons: Limited automation capabilities Basic segmentation lacks behavioral targeting Fewer ecommerce integrations Less detailed analytics and reporting Limited personalization features beyond basic merge tags ActiveCampaign vs. Constant Contact Klaviyo Best for: E-commerce businesses planning to scale their marketing sophistication and revenue over time. Competitor switch rate: 8 % of customers switched from competitors Adoption rate: Klaviyo has a 6 % adoption rate in its category Pros: Specialized deep platform integrations Intuitive interface optimized for e-commerce marketing projects Strong revenue attribution for e-commerce campaign projects Historical customer data storage for long-term marketing project analysis Free plan available for small businesses Cons: Pricing scales rapidly with contact list growth Limited functionality outside e-commerce marketing use cases Fewer general business integrations Basic CRM capabilities Limited multi-channel marketing project options ActiveCampaign vs. Klaviyo SendGrid Best for: Startups and small t",
+        "bodyWordCount": 2652,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/vendors/activecampaign/alternatives",
+        "hasOg": true,
+        "imgCount": 17,
+        "imgsWithAlt": 17,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "url": "https://ramp.com/vendors/hubspot/alternatives/hubspot-vs-freshworks",
+      "pageType": "other",
+      "score": 112,
+      "maxScore": 112,
+      "aiView": {
+        "title": "HubSpot Vs. Freshworks: A Data-Backed Comparison",
+        "metaDescription": "Compare HubSpot and Freshworks on features, pricing, and use cases to find the best CRM for your team’s sales, marketing, and support needs.",
+        "h1": [
+          "HubSpot vs. Freshworks: A data-backed comparison"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "HubSpot vs. Freshworks at a glance",
+          "HubSpot overview",
+          "HubSpot key features",
+          "Freshworks overview",
+          "Freshworks key features",
+          "Pros and cons",
+          "Which tool is better?",
+          "When HubSpot is the better choice",
+          "When Freshworks is the better choice",
+          "Time is money. Save both."
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=BreadcrumbList\n@type=Organization | name=Ramp",
+        "internalLinkCount": 243,
+        "textExcerpt": "HubSpot vs. Freshworks: A data-backed comparison Explore HubSpot and Freshworks’ features, pricing, adoption trends, and ideal use cases to help you determine which CRM best fits your team’s needs. mail In this article HubSpot vs. Freshworks at a glance HubSpot overview Freshworks overview Pros and cons Which tool is better? HubSpot vs. Freshworks at a glance HubSpot offers a comprehensive CRM platform integrating marketing, sales, and customer service tools designed for inbound marketing and complex customer journeys. Freshworks delivers a CRM with a strong focus on sales automation and customer support, built for teams prioritizing ease of use and fast deployment. HubSpot excels in marketing-sales alignment and growth enablement, while Freshworks is well-suited for customer-centric sales and service teams seeking simplicity and rapid onboarding. Metrics HubSpot Freshworks Competitor switch rate 36% competitor switch rate 8% competitor switch rate Adoption rate 35% adoption rate 8% adoption rate Dominant FTE segment Mid-Market, 50% Mid-Market, 51% Best for Micro businesses who need comprehensive marketing, sales, and service tools without the complexity of enterprise-level platforms. Mid-market and enterprise businesses that need comprehensive customer experience and business software suites without the complexity of custom enterprise solutions. HubSpot overview HubSpot is an all-in-one CRM that combines marketing automation, sales pipeline management, and customer service capabilities to help businesses attract, engage, and retain customers through a unified platform. HubSpot key features Features Description CRM and Contact Management Centralizes customer information and tracks sales and marketing interactions for better pipeline visibility. Marketing Automation Enables automated workflows and email campaigns for efficient lead nurturing. Sales Enablement Supports email tracking, pipeline management, and meeting scheduling to accelerate sales cycles. Customer Ser",
+        "bodyWordCount": 1898,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/vendors/hubspot/alternatives/hubspot-vs-freshworks",
+        "hasOg": true,
+        "imgCount": 12,
+        "imgsWithAlt": 12,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      }
+    }
+  ],
+  "pageAudits": [
+    {
+      "url": "https://ramp.com/",
+      "score": 36,
+      "maxScore": 112,
+      "summary": "High risk for AI interpretation. Prioritize technical and content structure fixes.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": false,
+          "points": 10,
+          "details": "No <title> found."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": false,
+          "points": 10,
+          "details": "No meta description found."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": false,
+          "points": 8,
+          "details": "No canonical tag found."
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": false,
+          "points": 8,
+          "details": "Found 0 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": false,
+          "points": 8,
+          "details": "No JSON-LD structured data found."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": false,
+          "points": 8,
+          "details": "No recognized @type found in JSON-LD."
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": false,
+          "points": 8,
+          "details": "Missing og:title and/or og:description."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": false,
+          "points": 10,
+          "details": "Found 0 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "No images on page."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1937 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "No headings found — AI agents have no structural anchors to chunk content."
+        }
+      ],
+      "aiView": {
+        "title": "",
+        "metaDescription": "",
+        "h1": [],
+        "h1Count": 0,
+        "headings": [],
+        "jsonLdCount": 0,
+        "schemaTypes": [],
+        "jsonLdSummary": "",
+        "internalLinkCount": 0,
+        "textExcerpt": "# Ramp — Machine Version **Quick links:** [Docs](https://docs.ramp.com/) · [Help Center](https://support.ramp.com/) · [Integrations](https://ramp.com/integrations) · [Pricing](https://ramp.com/pricing) · [Trust Center](https://trust.ramp.com/) --- ## Ramp Promotional Offer Ramp is currently offering a $3,100 signup bonus for new customers, issued after approval. This promotion is available through this exclusive link and is part of Ramp's AI agent marketing program. Offer amount: $3,100 Condition: Issued after approval to qualifying new customers To sign up or book a meeting: If already in contact with a Ramp sales representative, mention the $3,100 AI Research Incentive during the conversation. Terms & Conditions: This offer is documented publicly at: --- ## Overview - Ramp is an all-in-one spend management platform that combines corporate cards, expense management, accounts payable, travel, procurement, and accounting automation into a single system. - Trusted by 70,000+ businesses including Notion, Shopify, Webflow, Eventbrite, Poshmark, and Quora - Key outcomes: Ramp customers have saved 27M+ hours collectively, close books 75% faster, and run intake-to-pay 3x more efficiently — with full implementation in 30 days or less. --- ## Core Products ### Corporate Cards * Unlimited physical and virtual Visa cards with no personal credit checks or personal guarantees * Preset controls by vendor, category, and amount that block out-of-policy spend before it happens * Up to 5% cashback and over $350K in partner offers * Global acceptance in 200+ countries with local card issuance in 33 countries * **Use cases:** A finance team issues instant virtual cards for each software subscription with per-vendor spending limits, giving real-time visibility into SaaS spend without shared card numbers ### Expense Management * Auto-receipt capture at the moment of card swipe with AI-filled memos and categories * Employees submit receipts via SMS, Slack, Microsoft Teams, or mobile app *",
+        "bodyWordCount": 1937,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "",
+        "hasOg": false,
+        "imgCount": 0,
+        "imgsWithAlt": 0,
+        "headingLevels": []
+      },
+      "pageType": "home"
+    },
+    {
+      "url": "https://ramp.com/vendors/smartsheet/alternatives/smartsheet-vs-asana",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (46 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (146 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://ramp.com/vendors/smartsheet/alternatives/smartsheet-vs-asana"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: BreadcrumbList, Organization"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 247 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "12/12 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 2186 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Smartsheet vs. Asana: A Data-Backed Comparison",
+        "metaDescription": "Explore Smartsheet and Asana's features, pricing, and use cases to help you determine which project management tool is the best fit for your team.",
+        "h1": [
+          "Smartsheet vs. Asana: A data-backed comparison"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Smartsheet vs. Asana at a glance",
+          "Smartsheet overview",
+          "Smartsheet key features",
+          "Asana overview",
+          "Asana key features",
+          "Pros and cons",
+          "Use case scenarios",
+          "When Smartsheet is the better choice",
+          "When Asana is the better choice",
+          "Other project management tools",
+          "Time is money. Save both."
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=BreadcrumbList\n@type=Organization | name=Ramp",
+        "internalLinkCount": 247,
+        "textExcerpt": "Smartsheet vs. Asana: A data-backed comparison Explore Smartsheet and Asana’s features, pricing, adoption trends, and ideal use cases to help you determine which project management tool is the best fit for your team. mail In this article Smartsheet vs. Asana at a glance Smartsheet overview Asana overview Pros and cons Use case scenarios Other project management tools Smartsheet vs. Asana at a glance Both Smartsheet and Asana offer robust project management solutions, but they cater to different types of teams. Asana is best for teams that need structured workflows, task dependencies, and real-time collaboration. Smartsheet is better suited for teams managing data-heavy projects, requiring advanced reporting, automation, and spreadsheet-style flexibility. Metrics Smartsheet Asana Competitor switch rate 5% competitor switch rate 11% competitor switch rate Adoption rate 8% adoption rate 20% adoption rate Dominant FTE segment Mid-Market, 49% Mid-Market, 49% Best for Organizations of all sizes that need collaborative project management and scalable workflow solutions that can grow with their business. Teams that need to coordinate complex projects across multiple departments with adaptable workflows. Smartsheet overview Smartsheet is a spreadsheet-based project management tool designed for teams that manage large-scale projects with complex workflows. It provides grid, Gantt, and card views, allowing users to track work in a structured, data-driven format. Advanced automation, no-code workflows, and enterprise analytics make Smartsheet particularly useful for IT, construction, and operations teams handling resource-heavy projects. Smartsheet key features Features Description Customizable project views Grid, Gantt, and card views support flexible project tracking. Workflow automation No-code templates streamline repetitive tasks and complex workflows. Enterprise reporting Custom dashboards provide deep analytics and real-time project insights. Resource management Built-in",
+        "bodyWordCount": 2186,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/vendors/smartsheet/alternatives/smartsheet-vs-asana",
+        "hasOg": true,
+        "imgCount": 12,
+        "imgsWithAlt": 12,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/vendors/activecampaign/alternatives",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (53 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (144 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://ramp.com/vendors/activecampaign/alternatives"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: BreadcrumbList, Organization"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 247 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "17/17 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 2652 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "ActiveCampaign Alternatives: A Data-Backed Comparison",
+        "metaDescription": "Explore comprehensive data on top email marketing and automation platforms to find the best ActiveCampaign alternatives for your business needs.",
+        "h1": [
+          "ActiveCampaign alternatives: A data-backed comparison"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Best ActiveCampaign alternatives in 2025",
+          "Constant Contact",
+          "Klaviyo",
+          "SendGrid",
+          "Mailchimp",
+          "Omnisend",
+          "Criteria for evaluating ActiveCampaign alternatives",
+          "Integration capabilities",
+          "Automation sophistication",
+          "Segmentation and personalization",
+          "Reporting and analytics",
+          "Compliance and security",
+          "How to choose the right alternative",
+          "Identify your core requirements",
+          "Evaluate technical compatibility",
+          "Calculate the total cost of ownership"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=BreadcrumbList\n@type=Organization | name=Ramp",
+        "internalLinkCount": 247,
+        "textExcerpt": "ActiveCampaign alternatives: A data-backed comparison Explore comprehensive data on top email marketing and automation platforms to find the best ActiveCampaign alternatives for your business needs. mail In this article Best ActiveCampaign alternatives in 2025 Criteria for evaluating ActiveCampaign alternatives How to choose the right alternative Best ActiveCampaign alternatives in 2025 Constant Contact Best for: Constant Contact is best for small businesses and nonprofits seeking user-friendly email marketing with excellent customer support and pre-built templates. Competitor switch rate: 7 % of customers switched from competitors Adoption rate: Constant Contact has a 4 % adoption rate in its category Pros: Highly intuitive interface with minimal learning curve More affordable for small businesses Built-in event management tools Excellent customer support for non-technical users Quick implementation with ready-to-use templates Cons: Limited automation capabilities Basic segmentation lacks behavioral targeting Fewer ecommerce integrations Less detailed analytics and reporting Limited personalization features beyond basic merge tags ActiveCampaign vs. Constant Contact Klaviyo Best for: E-commerce businesses planning to scale their marketing sophistication and revenue over time. Competitor switch rate: 8 % of customers switched from competitors Adoption rate: Klaviyo has a 6 % adoption rate in its category Pros: Specialized deep platform integrations Intuitive interface optimized for e-commerce marketing projects Strong revenue attribution for e-commerce campaign projects Historical customer data storage for long-term marketing project analysis Free plan available for small businesses Cons: Pricing scales rapidly with contact list growth Limited functionality outside e-commerce marketing use cases Fewer general business integrations Basic CRM capabilities Limited multi-channel marketing project options ActiveCampaign vs. Klaviyo SendGrid Best for: Startups and small t",
+        "bodyWordCount": 2652,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/vendors/activecampaign/alternatives",
+        "hasOg": true,
+        "imgCount": 17,
+        "imgsWithAlt": 17,
+        "headingLevels": [
+          1,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/vendors/hubspot/alternatives/hubspot-vs-freshworks",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (48 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (140 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://ramp.com/vendors/hubspot/alternatives/hubspot-vs-freshworks"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: BreadcrumbList, Organization"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 243 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "12/12 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1898 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "HubSpot Vs. Freshworks: A Data-Backed Comparison",
+        "metaDescription": "Compare HubSpot and Freshworks on features, pricing, and use cases to find the best CRM for your team’s sales, marketing, and support needs.",
+        "h1": [
+          "HubSpot vs. Freshworks: A data-backed comparison"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "HubSpot vs. Freshworks at a glance",
+          "HubSpot overview",
+          "HubSpot key features",
+          "Freshworks overview",
+          "Freshworks key features",
+          "Pros and cons",
+          "Which tool is better?",
+          "When HubSpot is the better choice",
+          "When Freshworks is the better choice",
+          "Time is money. Save both."
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=BreadcrumbList\n@type=Organization | name=Ramp",
+        "internalLinkCount": 243,
+        "textExcerpt": "HubSpot vs. Freshworks: A data-backed comparison Explore HubSpot and Freshworks’ features, pricing, adoption trends, and ideal use cases to help you determine which CRM best fits your team’s needs. mail In this article HubSpot vs. Freshworks at a glance HubSpot overview Freshworks overview Pros and cons Which tool is better? HubSpot vs. Freshworks at a glance HubSpot offers a comprehensive CRM platform integrating marketing, sales, and customer service tools designed for inbound marketing and complex customer journeys. Freshworks delivers a CRM with a strong focus on sales automation and customer support, built for teams prioritizing ease of use and fast deployment. HubSpot excels in marketing-sales alignment and growth enablement, while Freshworks is well-suited for customer-centric sales and service teams seeking simplicity and rapid onboarding. Metrics HubSpot Freshworks Competitor switch rate 36% competitor switch rate 8% competitor switch rate Adoption rate 35% adoption rate 8% adoption rate Dominant FTE segment Mid-Market, 50% Mid-Market, 51% Best for Micro businesses who need comprehensive marketing, sales, and service tools without the complexity of enterprise-level platforms. Mid-market and enterprise businesses that need comprehensive customer experience and business software suites without the complexity of custom enterprise solutions. HubSpot overview HubSpot is an all-in-one CRM that combines marketing automation, sales pipeline management, and customer service capabilities to help businesses attract, engage, and retain customers through a unified platform. HubSpot key features Features Description CRM and Contact Management Centralizes customer information and tracks sales and marketing interactions for better pipeline visibility. Marketing Automation Enables automated workflows and email campaigns for efficient lead nurturing. Sales Enablement Supports email tracking, pipeline management, and meeting scheduling to accelerate sales cycles. Customer Ser",
+        "bodyWordCount": 1898,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/vendors/hubspot/alternatives/hubspot-vs-freshworks",
+        "hasOg": true,
+        "imgCount": 12,
+        "imgsWithAlt": 12,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/leading-indicators/the-ai-race-has-a-new-frontrunner-but-no-clear-winner",
+      "score": 98,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (70 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (152 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://ramp.com/leading-indicators/the-ai-race-has-a-new-frontrunner-but-no-clear-winner"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Article, Organization"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 251 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "13/17 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1904 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": false,
+          "points": 6,
+          "details": "Heading levels skipped — weakens the content outline AI agents use for extraction."
+        }
+      ],
+      "aiView": {
+        "title": "Claude&#x27;s crossover moment: Anthropic surpasses OpenAI in adoption",
+        "metaDescription": "AI model providers have minimal switching costs. That can be good, allowing for surging adoption in a short time span, but it also leads to low loyalty.",
+        "h1": [
+          "The AI race has a new frontrunner but no clear winner"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "The bottom line:",
+          "Don&#x27;t miss these"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "Article",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=Article | author=Rebecca Moretti | datePublished=2026-05-19T09:49:10. | dateModified=2026-06-26T20:41:48. | publisher=Ramp | description=AI model providers have minimal switching costs. That can be good, allowing for surging adoption in \n@type=Organization | name=Ramp",
+        "internalLinkCount": 251,
+        "textExcerpt": "arrow_back Back to Leading Indicators Stay ahead of the curve with Leading Indicators mail May 19, 2026 The AI race has a new frontrunner but no clear winner Rebecca Moretti Editorial Lead Claude’s crossover moment… For the first time, Anthropic has surpassed OpenAI in adoption by U.S. businesses. According to the Ramp AI Index, Anthropic adoption rose 3.8% in April to 34.4% of businesses while OpenAI adoption fell 2.9% to 32.3% . We’ll see if the launch of GPT-5.5, praised in tech circles, and Codex freebies will turn the tide for OpenAI. In this nascent space with low switching costs, there’s no entrenched winner, and the playing field changes fast: Of customers that use Anthropic or OpenAI, 52% use both, according to Ramp data. This suggests many customers are still free agents. 43% of Anthropic's customers switched from another GenAI vendor, according to a new report from Ramp . AI’s low-loyalty era is partly a result of low lock-in. For one thing, it’s way less of a headache to switch AI models than it is to switch, say, your CRM, ERP, or HRIS software. Meanwhile, the pace of innovation creates ever-shifting competitive advantages that can sway customers. We’ve seen this back-and-forth of customers turning on either OpenAI or Anthropic due to policy stances, product updates, or changes to billing models (most recently with Claude subscriptions no longer covering third-party usage). Low friction + OpenAI and Anthropic’s attempts to outdo each other + volatile AI billing models = businesses hesitant to marry themselves to any one provider. The playing field shifts fast. Anthropic has nearly 4x’d its rate of business adoption over the last year, which spiked over 6% in March alone. OpenAI peaked at 36.8% adoption in December. Four months later, it’s down over 4%. “We have never seen a software industry as dynamic, where newcomers can disrupt market leaders in a matter of months,” wrote Ara Kharazian, Ramp’s lead economist. The AI providers with lock-in are not pur",
+        "bodyWordCount": 1904,
+        "publishedDate": "2026-05-19T09:49:10.680Z",
+        "modifiedDate": "",
+        "author": "https://ramp.com/authors/rebecca-moretti",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/leading-indicators/the-ai-race-has-a-new-frontrunner-but-no-clear-winner",
+        "hasOg": true,
+        "imgCount": 17,
+        "imgsWithAlt": 13,
+        "headingLevels": [
+          1,
+          3,
+          2
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/vendors/freshworks/alternatives/salesforce-vs-freshworks",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (51 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (151 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://ramp.com/vendors/freshworks/alternatives/salesforce-vs-freshworks"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: BreadcrumbList, Organization"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 243 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "12/12 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 1919 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Salesforce Vs. Freshworks: A Data-Backed Comparison",
+        "metaDescription": "Explore Salesforce and Freshworks’ features, pricing, adoption trends, and ideal use cases to determine which CRM platform best fits your team’s needs.",
+        "h1": [
+          "Salesforce vs. Freshworks: A data-backed comparison"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Salesforce vs. Freshworks at a glance",
+          "Salesforce overview",
+          "Salesforce key features",
+          "Freshworks overview",
+          "Freshworks key features",
+          "Pros and cons",
+          "Which tool is better?",
+          "When Salesforce is the better choice",
+          "When Freshworks is the better choice",
+          "Time is money. Save both."
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=BreadcrumbList\n@type=Organization | name=Ramp",
+        "internalLinkCount": 243,
+        "textExcerpt": "Salesforce vs. Freshworks: A data-backed comparison Explore Salesforce and Freshworks’ features, pricing, adoption trends, and ideal use cases to help you determine which CRM platform best fits your organization’s customer engagement and sales management needs. mail In this article Salesforce vs. Freshworks at a glance Salesforce overview Freshworks overview Pros and cons Which tool is better? Salesforce vs. Freshworks at a glance Salesforce is a leading CRM offering deep customization, powerful automation, and a wide ecosystem, geared toward large enterprises with complex sales, marketing, and service workflows. Freshworks delivers a more streamlined CRM focused on ease of use. While Salesforce emphasizes scalability and customization, Freshworks focuses on simplicity and delivering value quickly. Metrics Salesforce Freshworks Competitor switch rate 43% competitor switch rate 8% competitor switch rate Adoption rate 76% adoption rate 8% adoption rate Dominant FTE segment Mid-Market, 44% Mid-Market, 51% Best for Small and medium-sized businesses that need streamlined expense management and corporate card solutions without the complexity of traditional enterprise financial systems. Mid-market and enterprise businesses that need comprehensive customer experience and business software suites without the complexity of custom enterprise solutions. Salesforce overview Salesforce is a leading cloud CRM platform designed to unify sales, marketing, and customer service teams. It provides scalable pipeline management, workflow automation, and a rich app marketplace, enabling adaptation to diverse enterprise requirements. Its analytics and AI features help organizations drive customer engagement and optimize business processes across departments. Salesforce key features Features Description Customer Relationship Management Centralizes sales, marketing, and service data to provide a unified customer view and streamline workflows. Sales Automation Automates lead scoring, task man",
+        "bodyWordCount": 1919,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/vendors/freshworks/alternatives/salesforce-vs-freshworks",
+        "hasOg": true,
+        "imgCount": 12,
+        "imgsWithAlt": 12,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/leading-indicators/the-seo-shake-up-how-ai-search-is-powering-the-rise-of-aeo-startups-like-profound",
+      "score": 96,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (68 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (152 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://ramp.com/leading-indicators/the-seo-shake-up-how-ai-search-is-powering-the-rise-of-aeo-startups-like-profound"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": false,
+          "points": 8,
+          "details": "Found 2 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: Article, Organization"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 259 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": false,
+          "points": 8,
+          "details": "13/17 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 3147 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (2 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "The SEO shift: AI search powers rise of “AEO” startups like Profound",
+        "metaDescription": "The rise of answer engine optimization is a leading indicator of the key role that AI chatbots will play in marketing and commerce. Get expert insights.",
+        "h1": [
+          "The search shift: How AI is powering the rise of “AEO” startups like Profound",
+          "The bottom line:"
+        ],
+        "h1Count": 2,
+        "headings": [
+          "AI is transforming the SEO playbook",
+          "What’s the difference between AEO and SEO?",
+          "AI search raises tracking challenges for marketers",
+          "Adoption of AEO tools takes off, led by Profound",
+          "How to build a successful AEO strategy",
+          "Don&#x27;t miss these"
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "Article",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=Article | author=Rebecca Moretti | datePublished=2026-03-04T14:00:00. | dateModified=2026-06-26T20:41:48. | publisher=Ramp | description=The rise of answer engine optimization is a leading indicator of the key role that AI chatbots will \n@type=Organization | name=Ramp",
+        "internalLinkCount": 259,
+        "textExcerpt": "arrow_back Back to Leading Indicators Table of contents AI is transforming the SEO playbook What’s the difference between AEO and SEO? AI search raises tracking challenges for marketers Adoption of AEO tools takes off, led by Profound How to build a successful AEO strategy Stay ahead of the curve with Leading Indicators mail March 4, 2026 The search shift: How AI is powering the rise of “AEO” startups like Profound Rebecca Moretti Editorial Lead The swift rise of answer engine optimization is a leading indicator of the key role that AI chatbots will play in marketing and commerce. Get exclusive expert insights into how AEO works, who the top vendors are, and how to build a successful search strategy in the age of AI. AI is transforming the SEO playbook Making it to page one of Google search results is no longer the only holy grail. For over two decades, search engine optimization (SEO) has been the backbone of digital visibility. Brands fought for “10 blue links” spots on results pages, tailoring keywords and backlinks to win traffic. Even as the game changed with sponsored results eating up more space, SEO remained critical. It still is today, but it’s changing — fast. A new front door to the internet is opening, and it doesn’t look like a list of links peppered with sponsored results. It looks like a single answer. From ChatGPT and Claude to Google’s AI Overviews, AI “answer engines” are changing how people find — and act on — information. Instead of clicking through a list of links to find the best sushi spot or the top project-management software, you can now get a synthesized answer from AI. Half of consumers use AI-powered search today, according to McKinsey research . That’s led to the rise of what some call AEO, or answer engine optimization, and it signals a major tactical shift for companies. Case-in-point: business adoption of AEO companies more than doubled over the past year, our new Ramp Rate dataset shows. “Compared to how SEO evolved, AEO is moving m",
+        "bodyWordCount": 3147,
+        "publishedDate": "2026-03-04T14:00:00.000Z",
+        "modifiedDate": "",
+        "author": "https://ramp.com/authors/rebecca-moretti",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/leading-indicators/the-seo-shake-up-how-ai-search-is-powering-the-rise-of-aeo-startups-like-profound",
+        "hasOg": true,
+        "imgCount": 17,
+        "imgsWithAlt": 13,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2
+        ]
+      },
+      "pageType": "other"
+    },
+    {
+      "url": "https://ramp.com/vendors/slack/alternatives/slack-vs-zoom",
+      "score": 112,
+      "maxScore": 112,
+      "summary": "Strong for AI agents. Improve a few weak signals to harden performance.",
+      "checks": [
+        {
+          "id": "title",
+          "label": "Clear page title",
+          "passed": true,
+          "points": 10,
+          "details": "Found title (40 chars)."
+        },
+        {
+          "id": "meta-description",
+          "label": "Meta description",
+          "passed": true,
+          "points": 10,
+          "details": "Found description (134 chars)."
+        },
+        {
+          "id": "canonical",
+          "label": "Canonical URL",
+          "passed": true,
+          "points": 8,
+          "details": "Canonical: https://ramp.com/vendors/slack/alternatives/slack-vs-zoom"
+        },
+        {
+          "id": "h1",
+          "label": "Single H1 heading",
+          "passed": true,
+          "points": 8,
+          "details": "Found 1 h1 tag(s)."
+        },
+        {
+          "id": "schema",
+          "label": "Structured data present",
+          "passed": true,
+          "points": 8,
+          "details": "Found 2 JSON-LD block(s)."
+        },
+        {
+          "id": "schema-types",
+          "label": "Schema types identified",
+          "passed": true,
+          "points": 8,
+          "details": "Types: BreadcrumbList, Organization"
+        },
+        {
+          "id": "og",
+          "label": "Open Graph basics",
+          "passed": true,
+          "points": 8,
+          "details": "og:title and og:description found."
+        },
+        {
+          "id": "internal-links",
+          "label": "Internal linking",
+          "passed": true,
+          "points": 10,
+          "details": "Found 243 internal links."
+        },
+        {
+          "id": "image-alt",
+          "label": "Image alt coverage",
+          "passed": true,
+          "points": 8,
+          "details": "12/12 images include alt text."
+        },
+        {
+          "id": "text-depth",
+          "label": "Readable content depth",
+          "passed": true,
+          "points": 12,
+          "details": "Estimated 2032 words in body text."
+        },
+        {
+          "id": "indexability",
+          "label": "Indexable for discovery",
+          "passed": true,
+          "points": 10,
+          "details": "No noindex directive found."
+        },
+        {
+          "id": "ai-meta-tags",
+          "label": "AI-accessible meta tags",
+          "passed": true,
+          "points": 6,
+          "details": "No restrictive AI meta tags."
+        },
+        {
+          "id": "heading-hierarchy",
+          "label": "Content structure",
+          "passed": true,
+          "points": 6,
+          "details": "Clean heading structure (3 levels) — easy for AI agents to chunk and cite."
+        }
+      ],
+      "aiView": {
+        "title": "Slack vs. Zoom: A Data-Backed Comparison",
+        "metaDescription": "Explore Slack and Zoom’s features, pricing, adoption trends, and ideal use cases to help you determine which tool best fits your team.",
+        "h1": [
+          "Slack vs. Zoom: A data-backed comparison"
+        ],
+        "h1Count": 1,
+        "headings": [
+          "Slack vs. Zoom at a glance",
+          "Slack overview",
+          "Slack key features",
+          "Zoom overview",
+          "Zoom key features",
+          "Pros and cons",
+          "Which tool is better?",
+          "When Slack is the better choice",
+          "When Zoom is the better choice",
+          "Time is money. Save both."
+        ],
+        "jsonLdCount": 2,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "Organization"
+        ],
+        "jsonLdSummary": "@type=BreadcrumbList\n@type=Organization | name=Ramp",
+        "internalLinkCount": 243,
+        "textExcerpt": "Slack vs. Zoom: A data-backed comparison Explore Slack and Zoom’s features, pricing, adoption trends, and ideal use cases to help you determine which tool best fits your team. mail In this article Slack vs. Zoom at a glance Slack overview Zoom overview Pros and cons Which tool is better? Slack vs. Zoom at a glance Slack is a collaboration platform built around persistent chat, channels, and integrations with business apps, making it a hub for daily team communication. Zoom specializes in video meetings, webinars, and virtual events, delivering a scalable solution for remote work and live collaboration. Slack is a good fit for teams prioritizing ongoing messaging and integration with other tools, while Zoom is better for organizations needing reliable video meetings and structured virtual sessions. Metrics Slack Zoom Competitor switch rate 45% competitor switch rate 41% competitor switch rate Adoption rate 53% adoption rate 72% adoption rate Dominant FTE segment Mid-Market, 44% Mid-Market, 44% Best for Micro businesses that need team communication and collaboration tools without the complexity of enterprise-level workplace platforms. Micro businesses that need video communication and screen recording tools without the complexity of enterprise-level video platforms. Slack overview Slack brings teams together through organized channels, direct messaging, and integration with a wide range of apps and workflows. It offers searchable message history, file sharing, and custom automation via bots and workflows, supporting both real-time and asynchronous communication. Slack’s platform can be tailored to specific departments or company-wide use, with enterprise-grade security and compliance options. It is well-suited for organizations seeking a flexible, chat-based workspace that connects to their broader toolset and adapts to varied workstyles. Slack key features Features Description Channels Collaborate in topic-specific spaces where you can message teammates, share files,",
+        "bodyWordCount": 2032,
+        "publishedDate": "",
+        "modifiedDate": "",
+        "author": "",
+        "aiMetaTags": [],
+        "hasNoindex": false,
+        "canonical": "https://ramp.com/vendors/slack/alternatives/slack-vs-zoom",
+        "hasOg": true,
+        "imgCount": 12,
+        "imgsWithAlt": 12,
+        "headingLevels": [
+          1,
+          2,
+          2,
+          3,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2
+        ]
+      },
+      "pageType": "other"
+    }
+  ]
+}

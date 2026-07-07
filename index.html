@@ -1,0 +1,270 @@
+<title>AEO Audit — is your site citable by ChatGPT, Claude, or Perplexity?</title>
+<style>
+  :root {
+    --paper: #ECEEEB;
+    --paper-raised: #F5F6F3;
+    --ink: #191D1B;
+    --ink-soft: #4B524D;
+    --ink-faint: #7B8179;
+    --line: #D6D3C8;
+    --accent: #A8641F;
+    --accent-soft: #EADFCB;
+    --flag: #9C3A2A;
+    --flag-soft: #F1E1DC;
+    --verified: #35603F;
+    --verified-soft: #DEE7DE;
+    --font-display: ui-serif, "Iowan Old Style", "Palatino Linotype", "URW Palladio", Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px 96px; }
+  header.hero { background: var(--paper-raised); border-bottom: 1px solid var(--line); padding: 56px 24px 40px; margin-bottom: 56px; }
+  .hero-inner { max-width: 820px; margin: 0 auto; }
+  .eyebrow { display: flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+  h1 { font-family: var(--font-display); font-weight: 500; font-size: clamp(28px, 4.4vw, 40px); line-height: 1.18; letter-spacing: -0.01em; margin: 0 0 18px; text-wrap: balance; color: var(--ink); }
+  .dek { font-size: 17.5px; color: var(--ink-soft); max-width: 66ch; margin: 0; }
+  .repo-chip { display: inline-flex; align-items: baseline; gap: 8px; margin-top: 24px; font-family: var(--font-mono); font-size: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 7px 12px; }
+  .repo-chip span { color: var(--ink-faint); }
+  section { margin-bottom: 52px; }
+  h2 { font-family: var(--font-display); font-weight: 500; font-size: 22px; letter-spacing: -0.005em; margin: 0 0 8px; text-wrap: balance; }
+  .section-note { font-size: 13.5px; color: var(--ink-faint); margin: 0 0 20px; }
+  p { max-width: 68ch; color: var(--ink-soft); margin: 0 0 16px; }
+  p:last-child { margin-bottom: 0; }
+  p a { color: var(--accent); }
+  .caveat { display: flex; gap: 12px; align-items: flex-start; background: var(--flag-soft); border: 1px solid #E3BEB2; border-radius: 10px; padding: 16px 20px; margin: 0 0 32px; }
+  .caveat b { color: var(--flag); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; flex-shrink: 0; white-space: nowrap; padding-top: 2px; }
+  .caveat p { margin: 0; color: var(--ink); font-size: 14.5px; max-width: none; }
+  .rank-table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 13px; background: var(--paper-raised); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin-bottom: 8px; }
+  .rank-table th, .rank-table td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .rank-table th { background: var(--paper); color: var(--ink-faint); font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.04em; }
+  .rank-table tr:last-child td { border-bottom: none; }
+  .rank-table td.num { text-align: right; }
+  .grade { display: inline-block; font-weight: 700; padding: 2px 8px; border-radius: 5px; font-size: 12px; }
+  .grade-A, .grade-B\+ { background: var(--verified-soft); color: var(--verified); }
+  .grade-C, .grade-C\+ { background: var(--accent-soft); color: var(--accent); }
+  .grade-D, .grade-F { background: var(--flag-soft); color: var(--flag); }
+  .detail-card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 10px; padding: 24px 26px; margin-bottom: 20px; }
+  .detail-card .path { font-family: var(--font-mono); font-size: 13.5px; color: var(--verified); background: var(--verified-soft); display: inline-block; padding: 3px 8px; border-radius: 5px; margin-bottom: 14px; }
+  .site-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+  .site-head h3 { font-family: var(--font-display); font-size: 19px; margin: 0; }
+  .site-scores { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-faint); margin-bottom: 16px; }
+  .dim-table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 12.5px; margin-bottom: 14px; }
+  .dim-table th, .dim-table td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .dim-table th { color: var(--ink-faint); font-weight: 600; text-transform: uppercase; font-size: 10.5px; letter-spacing: 0.04em; }
+  .dim-table td.score { text-align: center; font-weight: 700; color: var(--accent); }
+  .dim-table td.note { font-family: var(--font-body); color: var(--ink-soft); font-size: 13px; }
+  .finding { font-size: 13.5px; color: var(--ink-soft); margin: 12px 0 0; padding-top: 12px; border-top: 1px dashed var(--line); }
+  .finding b { color: var(--ink); font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .verdict-row { display: flex; gap: 10px; align-items: flex-start; margin-top: 18px; padding-top: 18px; border-top: 1px dashed var(--line); }
+  .verdict-badge { flex-shrink: 0; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+  .cta { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 36px 32px; text-align: left; }
+  .cta h2 { margin-bottom: 12px; }
+  .cta p { max-width: 60ch; }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 22px; }
+  .btn { display: inline-block; background: var(--ink); color: var(--paper); font-family: var(--font-body); font-weight: 600; font-size: 14.5px; padding: 11px 20px; border-radius: 7px; text-decoration: none; border: none; cursor: pointer; }
+  .btn:hover { background: var(--accent); }
+  .email-line { font-family: var(--font-mono); font-size: 15px; margin-top: 4px; }
+  .email-line a { color: var(--ink); font-weight: 600; }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-faint); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer a { color: var(--ink-faint); }
+  @media (max-width: 560px) { header.hero { padding: 40px 20px 32px; } .detail-card, .cta { padding: 22px 20px; } .rank-table, .dim-table { font-size: 11px; } }
+</style>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Live demo · real crawls, no API keys, no fabricated scores</div>
+    <h1>Would ChatGPT, Claude, or Perplexity actually cite this page?</h1>
+    <p class="dek">Search is moving from blue links to AI answers, and the SEO playbook that won on Google doesn't automatically win on an LLM. I audited 6 real, live company websites for AI-engine discoverability (AEO/GEO) using a two-layer methodology: 16 deterministic checks, plus 6 content-quality dimensions I scored myself by reading what a crawler actually pulls back.</p>
+    <div class="repo-chip"><strong>aeo-audit-demo</strong><span>— Node crawler + Claude-judged scoring, real sites throughout</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="caveat">
+    <b>Scale note</b>
+    <p>6 sites, 8 pages each, is a demo-scale sample chosen for name recognition and methodology — not a market survey. The deterministic layer is fully reproducible; the intelligence layer is my judgment, disclosed with a rationale per score, not a hidden black box.</p>
+  </div>
+
+  <section>
+    <h2>Why this, not another lead-gen demo</h2>
+    <p>The rest of this portfolio is lead-gen and enrichment (signal scoring, account briefs, a SQL warehouse). This is a different skill: AEO/GEO — whether AI engines can find, parse, and trust a page enough to cite it. It's a genuinely current 2025-2026 GTM problem, not a repeat of the same demo with a new API.</p>
+  </section>
+
+  <section>
+    <h2>Methodology — two layers, 50/50</h2>
+    <p class="section-note">Script: <a href="https://github.com/Aditya-chouhan/aeo-audit-demo/blob/main/scripts/aeo-audit.mjs" target="_blank" rel="noopener">scripts/aeo-audit.mjs</a> — adapted from OnVoyage AI's open-source <code>audit-website-aeo</code> skill (MIT license, attributed in the repo). Not written by me; my contribution is running it against real sites and judging the intelligence layer.</p>
+    <div class="detail-card">
+      <span class="path">layer 1 — foundational (deterministic, 0-100)</span>
+      <p style="margin:0 0 10px;">16 pass/fail checks per site: title/meta quality, canonical tags, schema.org/JSON-LD, heading hierarchy, <code>llms.txt</code>, AI-bot access in <code>robots.txt</code>, RSS feeds, image alt coverage, and more. Same input, same score, every run.</p>
+      <span class="path" style="margin-top:14px;">layer 2 — intelligence (Claude-judged, 0-100)</span>
+      <p style="margin:0;">The script surfaces up to 5 representative pages per site with real title/headings/schema/text-excerpt data. I read those excerpts and scored 6 dimensions (0-5 each: Answer Readiness, Quotability, Evidence Density, Content Depth, Freshness, Structural Clarity) the way an AI agent deciding whether to cite a source actually would — rationale written before each score, all in <a href="https://github.com/Aditya-chouhan/aeo-audit-demo/blob/main/data/scores.json" target="_blank" rel="noopener">data/scores.json</a>.</p>
+    </div>
+    <p class="section-note">Final score = <code>round(0.5 &times; foundational + 0.5 &times; intelligence)</code>, mapped to an A-F grade.</p>
+  </section>
+
+  <section>
+    <h2>Ranked: 6 real sites, 2 scores each</h2>
+    <table class="rank-table">
+      <tr><th>site</th><th class="num">foundational</th><th class="num">intelligence</th><th class="num">final</th><th>grade</th></tr>
+      <tr><td>Ramp</td><td class="num">79</td><td class="num">83</td><td class="num">81</td><td><span class="grade grade-B+">B+</span></td></tr>
+      <tr><td>Anthropic</td><td class="num">72</td><td class="num">63</td><td class="num">68</td><td><span class="grade grade-C+">C+</span></td></tr>
+      <tr><td>Vercel</td><td class="num">59</td><td class="num">60</td><td class="num">60</td><td><span class="grade grade-C">C</span></td></tr>
+      <tr><td>Linear</td><td class="num">48</td><td class="num">57</td><td class="num">53</td><td><span class="grade grade-D">D</span></td></tr>
+      <tr><td>Stripe</td><td class="num">61</td><td class="num">37</td><td class="num">49</td><td><span class="grade grade-D">D</span></td></tr>
+      <tr><td>Notion</td><td class="num">38</td><td class="num">37</td><td class="num">38</td><td><span class="grade grade-F">F</span></td></tr>
+    </table>
+    <p class="finding">Ramp — a fintech, not an AI-native dev tool — beats every AI-native company here, including Anthropic. Notion, an AI-forward product company, scores lowest. Both results are non-obvious and neither was cherry-picked: this is the full set audited, in order.</p>
+  </section>
+
+  <section>
+    <h2>Site-by-site: real excerpts, disclosed rationale</h2>
+    <p class="section-note">All 6 site cards below. Full crawl data per site: <code>data/&lt;site&gt;.json</code>. Full scoring rationale: <a href="https://github.com/Aditya-chouhan/aeo-audit-demo/blob/main/data/scores.json" target="_blank" rel="noopener">data/scores.json</a>.</p>
+
+    <div class="detail-card">
+      <div class="site-head"><h3>Ramp</h3><span class="grade grade-B+">B+ · 81</span></div>
+      <div class="site-scores">foundational 79 &nbsp;&middot;&nbsp; intelligence 83 &nbsp;&middot;&nbsp; ramp.com</div>
+      <table class="dim-table">
+        <tr><th>dimension</th><th>score</th><th>rationale</th></tr>
+        <tr><td>Answer Readiness</td><td class="score">5</td><td class="note">Homepage serves crawlers a literal "Ramp — Machine Version" markdown doc with quick links; vendor pages are direct comparisons ("Smartsheet vs. Asana: A Data-Backed Comparison").</td></tr>
+        <tr><td>Quotability</td><td class="score">4</td><td class="note">Articles open with a one-line verdict, then pros/cons tables — clean, self-contained passages.</td></tr>
+        <tr><td>Evidence Density</td><td class="score">4</td><td class="note">Named authors (e.g. rebecca-moretti), ISO-dated bylines, framed explicitly as "data-backed."</td></tr>
+        <tr><td>Content Depth</td><td class="score">4</td><td class="note">Deterministic check: 100% of sampled pages meet the depth threshold.</td></tr>
+        <tr><td>Freshness</td><td class="score">4</td><td class="note">Sampled article dated 2026-03-04 with a real modifiedDate field; active editorial cadence.</td></tr>
+        <tr><td>Structural Clarity</td><td class="score">4</td><td class="note">Article/Organization/BreadcrumbList schema present; 75% clean heading hierarchy.</td></tr>
+      </table>
+      <p class="finding"><b>Key finding</b> — Ramp maintains a dedicated content team writing dated, authored, data-backed vendor-comparison pages, and hand-builds a markdown summary of its own homepage for crawlers. Most AI-search-ready site in this set, by a wide margin.</p>
+    </div>
+
+    <div class="detail-card">
+      <div class="site-head"><h3>Anthropic</h3><span class="grade grade-C+">C+ · 68</span></div>
+      <div class="site-scores">foundational 72 &nbsp;&middot;&nbsp; intelligence 63 &nbsp;&middot;&nbsp; anthropic.com</div>
+      <table class="dim-table">
+        <tr><th>dimension</th><th>score</th><th>rationale</th></tr>
+        <tr><td>Answer Readiness</td><td class="score">2</td><td class="note">Homepage and product pages are announcement/marketing copy, not Q&amp;A; only the careers page carries FAQPage schema.</td></tr>
+        <tr><td>Quotability</td><td class="score">3</td><td class="note">Self-contained product/announcement blurbs, reasonably extractable, not built as quotable passages.</td></tr>
+        <tr><td>Evidence Density</td><td class="score">3</td><td class="note">Real numbers appear ("81,000 voices", "1,250 professionals") but no in-text citations or author bylines.</td></tr>
+        <tr><td>Content Depth</td><td class="score">4</td><td class="note">Deterministic check: 100% of sampled pages meet the depth threshold.</td></tr>
+        <tr><td>Freshness</td><td class="score">4</td><td class="note">Legal/policy pages carry explicit "Last updated" dates (Feb 18 2026, Jul 10 2025).</td></tr>
+        <tr><td>Structural Clarity</td><td class="score">3</td><td class="note">Clean nav overall, though the homepage heading list mixes in promotional headline fragments.</td></tr>
+      </table>
+      <p class="finding"><b>Key finding</b> — Solid foundational plumbing, but content is announcement-first, not answer-first. No structural reason an AI engine would quote Anthropic's own pages over a neutral third-party summary of the same news.</p>
+    </div>
+
+    <div class="detail-card">
+      <div class="site-head"><h3>Vercel</h3><span class="grade grade-C">C · 60</span></div>
+      <div class="site-scores">foundational 59 &nbsp;&middot;&nbsp; intelligence 60 &nbsp;&middot;&nbsp; vercel.com</div>
+      <table class="dim-table">
+        <tr><th>dimension</th><th>score</th><th>rationale</th></tr>
+        <tr><td>Answer Readiness</td><td class="score">3</td><td class="note">Docs pages (BotID, Git deploys) open with a direct one-line definition of the feature.</td></tr>
+        <tr><td>Quotability</td><td class="score">4</td><td class="note">Definition-first docs paragraphs are cleanly extractable ("Vercel BotID is an invisible CAPTCHA that protects against...").</td></tr>
+        <tr><td>Evidence Density</td><td class="score">3</td><td class="note">Concrete usage claims ("Notion powers millions of agent conversations daily") but no dates or bylines.</td></tr>
+        <tr><td>Content Depth</td><td class="score">4</td><td class="note">Deterministic check: 88% of sampled pages meet the depth threshold across 3 template types.</td></tr>
+        <tr><td>Freshness</td><td class="score">1</td><td class="note">No date signals on any of the 5 sampled pages, including frequently-changing docs.</td></tr>
+        <tr><td>Structural Clarity</td><td class="score">3</td><td class="note">Good schema on docs pages, but a design-system page surfaced UI-label headings ("Default", "Warning") with no real content behind them.</td></tr>
+      </table>
+      <p class="finding"><b>Key finding</b> — Docs are genuinely well-written for AI citation, but marketing and design-system pages mixed into the same crawl are noisy and undated. AEO quality depends heavily on which section an agent lands on.</p>
+    </div>
+
+    <div class="detail-card">
+      <div class="site-head"><h3>Linear</h3><span class="grade grade-D">D · 53</span></div>
+      <div class="site-scores">foundational 48 &nbsp;&middot;&nbsp; intelligence 57 &nbsp;&middot;&nbsp; linear.app</div>
+      <table class="dim-table">
+        <tr><th>dimension</th><th>score</th><th>rationale</th></tr>
+        <tr><td>Answer Readiness</td><td class="score">1</td><td class="note">Pure product marketing and changelog entries; nothing framed as a question or direct answer.</td></tr>
+        <tr><td>Quotability</td><td class="score">3</td><td class="note">Changelog/blog entries are short and self-contained ("Some bugs at Linear now get fixed before a single engineer picks them up").</td></tr>
+        <tr><td>Evidence Density</td><td class="score">2</td><td class="note">Almost entirely qualitative claims about craft and quality; very few concrete numbers.</td></tr>
+        <tr><td>Content Depth</td><td class="score">4</td><td class="note">Deterministic check: 100% of sampled pages meet the depth threshold.</td></tr>
+        <tr><td>Freshness</td><td class="score">5</td><td class="note">Changelog and blog carry real, current dates (Jun 12 2026, Jul 2 2026) — most actively maintained content in the set.</td></tr>
+        <tr><td>Structural Clarity</td><td class="score">2</td><td class="note">Homepage H1 repeats the same headline 3 times (a responsive-breakpoint bug); only 63% of pages have a clean heading hierarchy.</td></tr>
+      </table>
+      <p class="finding"><b>Key finding</b> — Best freshness score in the set, but the markup an AI agent actually parses is messy — a tripled H1 string on the homepage is a one-line fix that's costing real AEO points.</p>
+    </div>
+
+    <div class="detail-card">
+      <div class="site-head"><h3>Stripe</h3><span class="grade grade-D">D · 49</span></div>
+      <div class="site-scores">foundational 61 &nbsp;&middot;&nbsp; intelligence 37 &nbsp;&middot;&nbsp; stripe.com</div>
+      <table class="dim-table">
+        <tr><th>dimension</th><th>score</th><th>rationale</th></tr>
+        <tr><td>Answer Readiness</td><td class="score">1</td><td class="note">4 of 5 sampled pages were legal Services Agreement pages, not product content.</td></tr>
+        <tr><td>Quotability</td><td class="score">1</td><td class="note">Dense contract clauses; nothing extractable as a clean 40-60 word citation.</td></tr>
+        <tr><td>Evidence Density</td><td class="score">2</td><td class="note">Section numbers and defined terms trigger a false positive on the deterministic "numeric evidence" check — this is legal boilerplate, not real evidence.</td></tr>
+        <tr><td>Content Depth</td><td class="score">4</td><td class="note">Deterministic check: 100% meet the depth threshold (legal text is long, which reads as "deep").</td></tr>
+        <tr><td>Freshness</td><td class="score">1</td><td class="note">No date signals on any sampled page.</td></tr>
+        <tr><td>Structural Clarity</td><td class="score">2</td><td class="note">Deterministic check flagged 0% of sampled pages with a single H1 — the homepage H1 array repeats the exact same sentence twice.</td></tr>
+      </table>
+      <p class="finding"><b>Key finding</b> — The clearest argument for the two-layer methodology here: Stripe's deterministic score (61) looks respectable, but it's inflated by long, well-formed legal pages that are nearly useless for an AI engine answering "what does Stripe do." Reading the actual content is what catches it.</p>
+    </div>
+
+    <div class="detail-card">
+      <div class="site-head"><h3>Notion</h3><span class="grade grade-F">F · 38</span></div>
+      <div class="site-scores">foundational 38 &nbsp;&middot;&nbsp; intelligence 37 &nbsp;&middot;&nbsp; notion.com</div>
+      <table class="dim-table">
+        <tr><th>dimension</th><th>score</th><th>rationale</th></tr>
+        <tr><td>Answer Readiness</td><td class="score">1</td><td class="note">Feature-bullet marketing copy throughout; nothing frames or answers a direct question.</td></tr>
+        <tr><td>Quotability</td><td class="score">2</td><td class="note">Short punchy headlines, but most substance is locked in embedded video, not text.</td></tr>
+        <tr><td>Evidence Density</td><td class="score">2</td><td class="note">One named customer quote (Ben Levick, Head of AI &amp; Ops, Ramp) is the only concrete attribution found.</td></tr>
+        <tr><td>Content Depth</td><td class="score">3</td><td class="note">Deterministic check says 75% meet the depth threshold, but a meaningful share of that "depth" is video-player UI chrome, not real content.</td></tr>
+        <tr><td>Freshness</td><td class="score">1</td><td class="note">No date signals on any sampled page.</td></tr>
+        <tr><td>Structural Clarity</td><td class="score">2</td><td class="note">Video-embedded pages leak player-UI text into parsed content ("your ad blocker is preventing the video from playing", "Pause").</td></tr>
+      </table>
+      <p class="finding"><b>Key finding</b> — Lowest score in the set, and the most counter-intuitive: Notion is an AI-forward product company whose own marketing site is the least AI-parseable one here, because its content strategy leans on video over text.</p>
+    </div>
+
+    <div class="verdict-row">
+      <span class="verdict-badge">HubSpot excluded</span>
+      <p style="margin:0;">HubSpot was attempted as a 7th site and its homepage crawl returned 0 pages under the script's own bot-detection — per the script's own instruction not to fabricate a score on a failed crawl, it was dropped rather than forced. Documented in <code>data/scores.json</code> and the repo README, not silently swapped for an easier target.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Why I built this</h2>
+    <p>The rest of this portfolio (<a href="https://aditya-chouhan.github.io/signal-engine-demo/" target="_blank" rel="noopener">signal-engine-demo</a>, <a href="https://aditya-chouhan.github.io/account-brief-demo/" target="_blank" rel="noopener">account-brief-demo</a>, <a href="https://aditya-chouhan.github.io/gtm-warehouse-demo/" target="_blank" rel="noopener">gtm-warehouse-demo</a>) is lead-gen and enrichment. AEO/GEO is the other current half of GTM engineering — whether the content a company already has is actually findable and citable by the AI engines a growing share of buyers now ask instead of Google. Same standard as the rest of this portfolio: real crawls, no fabricated scores, every judgment call disclosed.</p>
+    <div class="cta-row">
+      <a class="btn" href="mailto:ai.adityachouhan@gmail.com?subject=AEO%20audit%20demo" target="_top" rel="noopener">Let's talk</a>
+      <button class="btn" type="button" id="copyEmailBtn" style="border:none;cursor:pointer;">Copy email address</button>
+    </div>
+    <p class="email-line">Or write directly: <a href="mailto:ai.adityachouhan@gmail.com" target="_top" rel="noopener">ai.adityachouhan@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span>Aditya Chouhan — <a href="https://aditya-chouhan.github.io/signal-engine-demo/" target="_blank" rel="noopener">signal-engine-demo</a> · <a href="https://aditya-chouhan.github.io/account-brief-demo/" target="_blank" rel="noopener">account-brief-demo</a> · <a href="https://aditya-chouhan.github.io/gtm-warehouse-demo/" target="_blank" rel="noopener">gtm-warehouse-demo</a></span>
+    <a href="mailto:ai.adityachouhan@gmail.com" target="_top" rel="noopener">ai.adityachouhan@gmail.com</a>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copyEmailBtn');
+    if (!btn) return;
+    var email = 'ai.adityachouhan@gmail.com';
+    var originalLabel = btn.textContent;
+    btn.addEventListener('click', function () {
+      function fallbackCopy() {
+        var ta = document.createElement('textarea');
+        ta.value = email;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
+      btn.textContent = 'Copied!';
+      btn.disabled = true;
+      setTimeout(function () { btn.textContent = originalLabel; btn.disabled = false; }, 2000);
+    });
+  })();
+</script>

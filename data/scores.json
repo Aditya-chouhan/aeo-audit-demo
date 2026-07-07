@@ -1,0 +1,113 @@
+{
+  "methodology": "Foundational score: 16 deterministic checks (aeo-audit.mjs), 0-100, reproducible. Intelligence score: 6 dimensions scored 0-5 each by Claude reading the actual crawled page excerpts (pagesForReview) for that site, then averaged and scaled to 0-100. Final = round(0.5 x foundational + 0.5 x intelligence).",
+  "sites": [
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "url": "https://ramp.com",
+      "foundationalScore": 79,
+      "dimensions": {
+        "answerReadiness": {"score": 5, "note": "Homepage serves a literal 'Ramp — Machine Version' markdown doc to crawlers with quick links (docs, pricing, trust center); vendor pages are structured as direct comparisons ('Smartsheet vs. Asana: A Data-Backed Comparison')."},
+        "quotability": {"score": 4, "note": "Comparison articles open with a one-line verdict, then pros/cons tables — clean, self-contained passages."},
+        "evidenceDensity": {"score": 4, "note": "Articles carry named authors (e.g. rebecca-moretti) and ISO-dated bylines; framed explicitly as 'data-backed'."},
+        "contentDepth": {"score": 4, "note": "Deterministic heuristic: 100% of sampled pages meet the depth threshold."},
+        "freshness": {"score": 4, "note": "Sampled article dated 2026-03-04 with a real modifiedDate field; active editorial cadence."},
+        "structuralClarity": {"score": 4, "note": "Article/Organization/BreadcrumbList schema present; 75% clean heading hierarchy per the deterministic pass."}
+      },
+      "intelligenceScore": 83,
+      "finalScore": 81,
+      "grade": "B+",
+      "keyFinding": "Ramp — a fintech, not an AI-native dev tool — outscores every AI-native company in this set. It maintains a dedicated content team writing dated, authored, data-backed vendor-comparison pages, and literally serves crawlers a hand-built markdown summary of the homepage. This is the most AI-search-ready site here by a wide margin."
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com",
+      "foundationalScore": 72,
+      "dimensions": {
+        "answerReadiness": {"score": 2, "note": "Homepage and product pages are announcement/marketing copy, not Q&A; only the careers page carries FAQPage schema."},
+        "quotability": {"score": 3, "note": "Headings are self-contained product/announcement blurbs, reasonably extractable, but not built as quotable passages."},
+        "evidenceDensity": {"score": 3, "note": "Real numbers appear ('81,000 voices', '1,250 professionals') but no in-text citations or author bylines."},
+        "contentDepth": {"score": 4, "note": "Deterministic heuristic: 100% of sampled pages meet the depth threshold."},
+        "freshness": {"score": 4, "note": "Legal/policy pages carry explicit 'Last updated' dates (Feb 18 2026, Jul 10 2025)."},
+        "structuralClarity": {"score": 3, "note": "Clean nav and heading structure overall, though the homepage mixes promotional headline fragments into the heading list."}
+      },
+      "intelligenceScore": 63,
+      "finalScore": 68,
+      "grade": "C+",
+      "keyFinding": "Anthropic's foundational plumbing is solid (llms.txt-adjacent signals, clean metadata), but the content itself is announcement-first, not answer-first — there's no structural reason an AI engine would quote Anthropic's own marketing pages over a neutral third-party summary of the same news."
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "url": "https://vercel.com",
+      "foundationalScore": 59,
+      "dimensions": {
+        "answerReadiness": {"score": 3, "note": "Docs pages (BotID, Git deploys) open with a direct one-line definition of what the feature is and does."},
+        "quotability": {"score": 4, "note": "Definition-first docs paragraphs are cleanly extractable ('Vercel BotID is an invisible CAPTCHA that protects against...')."},
+        "evidenceDensity": {"score": 3, "note": "Concrete third-party usage claims present ('Notion powers millions of agent conversations daily', 'Zapier serves over 100 million monthly website visits') but no dates or bylines."},
+        "contentDepth": {"score": 4, "note": "Deterministic heuristic: 88% of sampled pages meet the depth threshold across 3 template types."},
+        "freshness": {"score": 1, "note": "No date signals on any of the 5 sampled pages, including docs that change frequently."},
+        "structuralClarity": {"score": 3, "note": "TechArticle/BreadcrumbList schema on docs pages, but a design-system page (Geist 'Note' component) surfaced UI-label headings ('Default', 'Action', 'Warning') with no real content behind them — noise for a crawler."}
+      },
+      "intelligenceScore": 60,
+      "finalScore": 60,
+      "grade": "C",
+      "keyFinding": "Vercel's docs are genuinely well-written for AI citation (definition-first, structured), but the marketing/design-system pages mixed into the same crawl are noisy and undated — the site's AEO quality is uneven depending on which section an agent lands on."
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "url": "https://linear.app",
+      "foundationalScore": 48,
+      "dimensions": {
+        "answerReadiness": {"score": 1, "note": "Pure product marketing and changelog entries; nothing is framed as a question or direct answer."},
+        "quotability": {"score": 3, "note": "Changelog and blog entries are short and reasonably self-contained ('Some bugs at Linear now get fixed before a single engineer picks them up')."},
+        "evidenceDensity": {"score": 2, "note": "Almost entirely qualitative claims about craft and quality; very few concrete numbers."},
+        "contentDepth": {"score": 4, "note": "Deterministic heuristic: 100% of sampled pages meet the depth threshold."},
+        "freshness": {"score": 5, "note": "Changelog and blog carry real, current dates (Jun 12 2026, Jul 2 2026) — the most actively maintained content in this set."},
+        "structuralClarity": {"score": 2, "note": "Homepage H1 repeats the same headline 3 times (likely a responsive-breakpoint duplication bug); only 63% of pages have a clean heading hierarchy per the deterministic check."}
+      },
+      "intelligenceScore": 57,
+      "finalScore": 53,
+      "grade": "D",
+      "keyFinding": "Linear updates constantly (best freshness score in the set) but the actual markup an AI agent parses is messy — a tripled H1 string on the homepage is the kind of front-end bug that costs real AEO points and would take one line to fix."
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "url": "https://stripe.com",
+      "foundationalScore": 61,
+      "dimensions": {
+        "answerReadiness": {"score": 1, "note": "4 of 5 sampled pages were legal Services Agreement pages, not product content — legal text does not answer a user's actual question about Stripe."},
+        "quotability": {"score": 1, "note": "Dense contract clauses; nothing extractable as a clean 40-60 word citation."},
+        "evidenceDensity": {"score": 2, "note": "Section numbers and defined terms give a false positive on the deterministic 'numeric evidence' check (88% heuristic) — this is legal boilerplate, not real evidence."},
+        "contentDepth": {"score": 4, "note": "Deterministic heuristic: 100% of sampled pages meet the depth threshold (legal text is long, which the check reads as 'deep')."},
+        "freshness": {"score": 1, "note": "No date signals on any sampled page."},
+        "structuralClarity": {"score": 2, "note": "Deterministic check explicitly flagged 0% of sampled pages with a single H1 — the homepage H1 array contains the exact same sentence twice."}
+      },
+      "intelligenceScore": 37,
+      "finalScore": 49,
+      "grade": "D",
+      "keyFinding": "This is the clearest argument for the two-layer methodology in this whole audit: Stripe's deterministic score (61) looks respectable, but it's inflated by legal-agreement pages that are long and well-formed HTML while being nearly useless for an AI engine trying to answer 'what does Stripe do.' A crawl that happens to sample legal pages over product pages produces a foundational score that overstates real AI-citability — reading the actual content is what catches it."
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "url": "https://www.notion.com",
+      "foundationalScore": 38,
+      "dimensions": {
+        "answerReadiness": {"score": 1, "note": "Feature-bullet marketing copy throughout; nothing frames or answers a direct question."},
+        "quotability": {"score": 2, "note": "Short punchy headlines, but most substance is locked in embedded video, not text."},
+        "evidenceDensity": {"score": 2, "note": "One named customer quote (Ben Levick, Head of AI & Ops, Ramp) is the only concrete attribution found; otherwise vague ('works everywhere you do')."},
+        "contentDepth": {"score": 3, "note": "Deterministic heuristic says 75% meet the depth threshold, but a meaningful share of that 'depth' is video-player UI chrome, not real content."},
+        "freshness": {"score": 1, "note": "No date signals on any sampled page."},
+        "structuralClarity": {"score": 2, "note": "Video-embedded pages leak player-UI text into the parsed content ('Uh-oh! It looks like your ad blocker is preventing the video from playing', 'Pause') — exactly the kind of noise a text-parsing AI agent has to wade through to find the real point."}
+      },
+      "intelligenceScore": 37,
+      "finalScore": 38,
+      "grade": "F",
+      "keyFinding": "The lowest score in the set, and the most counter-intuitive: Notion is an AI-forward product company whose own marketing site is the least AI-parseable site here, because its content strategy leans on embedded video over text. An agent reading this site literally gets ad-blocker warnings and player-control labels instead of product substance."
+    }
+  ]
+}

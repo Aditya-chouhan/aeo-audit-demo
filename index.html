@@ -106,6 +106,7 @@
       <p style="margin:0;">The script surfaces up to 5 representative pages per site with real title/headings/schema/text-excerpt data. I read those excerpts and scored 6 dimensions (0-5 each: Answer Readiness, Quotability, Evidence Density, Content Depth, Freshness, Structural Clarity) the way an AI agent deciding whether to cite a source actually would — rationale written before each score, all in <a href="https://github.com/Aditya-chouhan/aeo-audit-demo/blob/main/data/scores.json" target="_blank" rel="noopener">data/scores.json</a>.</p>
     </div>
     <p class="section-note">Final score = <code>round(0.5 &times; foundational + 0.5 &times; intelligence)</code>, mapped to an A-F grade.</p>
+    <p class="section-note"><strong>Why the crawler doesn't render JavaScript — and why that's the point:</strong> the audit fetches raw HTML without executing JS. So do the AI engines: <a href="https://vercel.com/blog/the-rise-of-the-ai-crawler" target="_blank" rel="noopener">Vercel &amp; Merj's crawler study</a> (500M+ GPTBot fetches analyzed) found that GPTBot, ClaudeBot, and PerplexityBot execute zero JavaScript — GPTBot downloads JS files ~11% of the time but never runs them. Only Google's Gemini renders JS, via Googlebot's infrastructure. A site whose content only exists after JS execution is invisible to most AI engines — which is exactly what this audit measures. Notion's F is not a crawler artifact; it is what ChatGPT sees.</p>
   </section>
 
   <section>
